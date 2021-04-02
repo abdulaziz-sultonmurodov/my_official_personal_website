@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Milkshake";
+  src: local("frontend/src/fonts/Milkshake.ttf");
+}
+.milkshake {
+  font-family: Milkshake;
+}
+
+body {
+  /* background-color: #f5f5f5; */
+  background-color: #ffffff;
+}
