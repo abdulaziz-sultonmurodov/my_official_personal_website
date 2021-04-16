@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        sidebar: "93vh",
-        header: "7vh",
+        sidebar: "90vh",
+        header: "10vh",
       },
       textColor: {
         grey: "#8b8b81",

@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
     <>
       <header>
-        <nav className="bg-white h-header flex flex-row justify-between items-center">
+        <nav className="bg-white h-header flex flex-row justify-around items-center">
+        <Link to="/">
+        <div className="flex flex-row items-center">
+            <h1 className="milkshake text-4xl text-grey">AS</h1>
+          </div></Link>
           <div>
             <ul className="flex flex-row">
               <li className="ml-10 cursor-pointer text-grey hover:text-darkGrey">Home</li>
@@ -13,9 +18,7 @@ const Header = () => {
               <li className="ml-10 cursor-pointer text-grey hover:text-darkGrey">Contact</li>
             </ul>
           </div>
-          <div>
-            <h1 className="milkshake text-4xl mr-20">Abdulaziz Sultonmurodov</h1>
-          </div>
+
           <div>
             <ul className="flex flex-row">
               <li className="mr-10 cursor-pointer text-grey hover:text-darkGrey">Login</li>
