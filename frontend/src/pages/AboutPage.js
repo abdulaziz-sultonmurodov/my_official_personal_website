@@ -1,11 +1,15 @@
 import React from "react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 
 const AboutPage = () => {
   return (
     <>
+      <Header />
       <Sidebar />
-      <div className="h-screen"></div>
+      <div></div>
+      <Footer />
     </>
   );
 };

@@ -33,7 +33,7 @@ const Sidebar = () => {
                     <a target="_blank" href="#">
                     <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <a target="_blank" href="mailto:abdulazizsultonmurodov.dev@gmail.com">
                     <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
                     </a>
                     <a target="_blank" href="https://github.com/abdulaziz-sultonmurodov">

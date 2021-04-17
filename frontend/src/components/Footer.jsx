@@ -7,23 +7,23 @@ import { IoLogoFacebook } from "react-icons/io"
 import { IoLogoTwitter } from "react-icons/io" 
 import { IoLogoYoutube } from "react-icons/io" 
 import { HiMail } from "react-icons/hi"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Footer = () => {
     return (
         <>
            <footer className="flex flex-col">
-            <div>
-              <ul className="flex flex-col sm:flex-row justify-center items-center mt-4">
-                <Link to="/"><li className="text-grey hover:text-darkGrey cursor-pointer tracking-wider">Home</li></Link>
-                <Link to="/about"><li className="text-grey hover:text-darkGrey cursor-pointer ml-0 sm:ml-10 tracking-wider">About</li></Link>
-                <Link to="/portfolio"><li className="text-grey hover:text-darkGrey cursor-pointer ml-0 sm:ml-10 tracking-wider">Portfolio</li></Link>
-                <Link to="/courses"><li className="text-grey hover:text-darkGrey cursor-pointer ml-0 sm:ml-10 tracking-wider">Courses</li></Link>
-                <Link to="/blog"><li className="text-grey hover:text-darkGrey cursor-pointer ml-0 sm:ml-10 tracking-wider">Blog</li></Link>
-                <Link to="/contact"><li className="text-grey hover:text-darkGrey cursor-pointer ml-0 sm:ml-10 tracking-wider">Contact</li></Link>
+            <div className="w-2/5 mx-auto mt-48">
+              <ul className="flex flex-col sm:flex-row justify-center  lg:justify-evenly  items-center mt-4">
+                <NavLink exact activeClassName="navbar-active" to="/"><li className="text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider mt-4">Home</li></NavLink>
+                <NavLink activeClassName="navbar-active" to="/about"><li className="mt-4 text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">About</li></NavLink>
+                <NavLink activeClassName="navbar-active" to="/portfolio"><li className="mt-4 text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">Portfolio</li></NavLink>
+                <NavLink activeClassName="navbar-active" to="/courses"><li className="mt-4 text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">Courses</li></NavLink>
+                <NavLink activeClassName="navbar-active" to="/blog"><li className="mt-4 text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">Blog</li></NavLink>
+                <NavLink activeClassName="navbar-active" to="/contact"><li className="mt-4  text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">Contact</li></NavLink>
             </ul>    
             </div> 
-            <div className="flex flex-row justify-center items-center mt-4">
+            <div className="flex flex-row justify-center items-center mt-8 lg:mt-4">
                     <a target="_blank" href="https://t.me/abdulaziz_sultonmurodov_channel">
                     <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
                     </a>
@@ -50,7 +50,7 @@ const Footer = () => {
                     </a>
                 </div>   
             <div className="text-center my-4">
-                <p className="text-grey tracking-widest">&copy; Abdulaziz Sultonmurodov,  2021</p>
+                <p className="text-grey tracking-widest ">&copy; Abdulaziz Sultonmurodov,  2021</p>
             </div>   
            </footer> 
         </>

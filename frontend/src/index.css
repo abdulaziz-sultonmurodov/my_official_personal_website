@@ -7,11 +7,27 @@
   font-family: "Milkshake";
   src: local("frontend/src/fonts/Milkshake.ttf");
 }
+@font-face {
+  font-family: "Poppins";
+  src: local("frontend/src/fonts/Poppins-Regular.otf");
+}
 .milkshake {
   font-family: Milkshake;
+}
+.poppins {
+  font-family: "Poppins";
 }
 
 body {
   /* background-color: #f5f5f5; */
   background-color: #ffffff;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.navbar-active {
+  border-bottom: 2px solid #8b8b81;
+}
+.navbar-active:hover {
+  border-bottom: 2px solid #333333;
 }
