@@ -13,8 +13,8 @@ const Footer = () => {
     return (
         <>
            <footer className="flex flex-col">
-            <div className="w-2/5 mx-auto mt-48">
-              <ul className="flex flex-col sm:flex-row justify-center  lg:justify-evenly  items-center mt-4">
+            <div className="w-96 lg:w-2/5 mx-auto mt-48">
+              <ul className="flex flex-col sm:flex-row justify-center  sm:justify-between  items-center mt-4">
                 <NavLink exact activeClassName="navbar-active" to="/"><li className="text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider mt-4">Home</li></NavLink>
                 <NavLink activeClassName="navbar-active" to="/about"><li className="mt-4 text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">About</li></NavLink>
                 <NavLink activeClassName="navbar-active" to="/portfolio"><li className="mt-4 text-grey font-semibold hover:text-darkGrey cursor-pointer tracking-wider">Portfolio</li></NavLink>
