@@ -1,13 +1,13 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <>
       <Sidebar />
-      <main className="h-screen"></main>
+      <div className="h-screen"></div>
     </>
   );
 };
 
-export default HomePage;
+export default AboutPage;
