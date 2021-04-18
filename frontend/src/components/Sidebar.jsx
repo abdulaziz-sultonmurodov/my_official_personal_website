@@ -19,7 +19,7 @@ const Sidebar = () => {
     }
     return (
         <>
-            <aside style={{zIndex: "-10"}}  className="bg-white w-10 h-sidebar hidden lg:flex justify-center items-center fixed">
+            <aside style={{zIndex: "0"}}  className="bg-white w-10 h-sidebar hidden lg:flex justify-center items-center fixed">
                 <div id="sidebar" className="flex flex-col justify-evenly items-center h-1/2">
                     <a target="_blank" href="https://t.me/abdulaziz_sultonmurodov_channel">
                     <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />

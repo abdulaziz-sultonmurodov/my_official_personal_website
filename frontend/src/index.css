@@ -31,3 +31,18 @@ body {
 .navbar-active:hover {
   border-bottom: 2px solid #333333;
 }
+.imageDark {
+  filter: brightness(30%);
+}
+.imageDark:hover {
+  filter: brightness(100%);
+}
+.workContainer:hover .imageDark {
+  filter: brightness(100%);
+}
+.workContainer:hover .workTitle {
+  color: #333333;
+}
+.workTitle:hover .imageDark {
+  filter: brightness(100%);
+}

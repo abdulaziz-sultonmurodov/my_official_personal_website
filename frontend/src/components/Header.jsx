@@ -24,16 +24,16 @@ const Header = () => {
     
     <>
       <header>
-        <nav className="bg-white h-header flex flex-row justify-around items-center fixed w-full">
-          <div className="flex flex-row items-center">
+        <nav style={{ zIndex: "10" }} className="bg-white h-header flex flex-row justify-around items-center fixed w-full">
+          <div  className="flex flex-row items-center">
             <NavLink to="/">
               <h1 className="milkshake text-4xl text-grey hover:text-darkGrey">
                 AS
               </h1>
             </NavLink>
           </div>
-          <div className="w-2/5">
-            <ul className="hidden lg:flex flex-row justify-between items-center">
+          <div  className="w-2/5">
+            <ul  className="hidden lg:flex flex-row justify-between items-center">
               <NavLink exact activeClassName="navbar-active" to="/">
                 <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
                   Home
@@ -49,16 +49,16 @@ const Header = () => {
                   Portfolio
                 </li>
               </NavLink>
-              <NavLink activeClassName="navbar-active" to="/courses">
+              {/* <NavLink activeClassName="navbar-active" to="/courses">
                 <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
                   Courses
                 </li>
-              </NavLink>
-              <NavLink activeClassName="navbar-active" to="/blog">
+              </NavLink> */}
+              {/* <NavLink activeClassName="navbar-active" to="/blog">
                 <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
                   Blog
                 </li>
-              </NavLink>
+              </NavLink> */}
               <NavLink activeClassName="navbar-active" to="/contact">
                 <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey">
                   Contact
@@ -96,9 +96,9 @@ const Header = () => {
 
         <div
           id="burgerList"
-          className="hidden h-sidebar border-t border-gray-200 "
+          className="hidden h-screen border-t border-gray-200 "
         >
-          <ul className="px-2 pt-2 pb-3 mt-4 m-auto text-center space-y-1 sm:px-3">
+          <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-screen fixed w-full pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
             <NavLink onClick={closeNav} exact activeClassName="navbar-active" to="/">
               <li  className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Home
@@ -114,16 +114,16 @@ const Header = () => {
                 Portfolio
               </li>
             </NavLink>
-            <NavLink onClick={closeNav} activeClassName="navbar-active" to="/courses">
+            {/* <NavLink onClick={closeNav} activeClassName="navbar-active" to="/courses">
               <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Courses
               </li>
-            </NavLink>
-            <NavLink onClick={closeNav} activeClassName="navbar-active" to="/blog">
+            </NavLink> */}
+            {/* <NavLink onClick={closeNav} activeClassName="navbar-active" to="/blog">
               <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Blog
               </li>
-            </NavLink>
+            </NavLink> */}
             <NavLink onClick={closeNav} activeClassName="navbar-active" to="/contact">
               <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Contact
@@ -131,12 +131,12 @@ const Header = () => {
             </NavLink>
             <div>
               <NavLink onClick={closeNav} to="/login">
-                <li className="text-grey hover:text-darkGrey block  py-2  text-base font-semibold border border-gray-400 hover:border-gray-900 transform hover:scale-95 mt-4 text-center tracking-wider">
+                <li className="text-grey hover:text-darkGrey block w-48 mx-auto py-2  text-base font-semibold border border-gray-400 hover:border-gray-900 transform hover:scale-95 mt-4 text-center tracking-wider">
                   Login
                 </li>
               </NavLink>
               <NavLink onClick={closeNav} to="/signup">
-                <li className="text-white block py-2  text-base font-semibold bg-grey hover:bg-darkGrey mt-4 transform hover:scale-95 text-center tracking-wider">
+                <li className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-grey hover:bg-darkGrey mt-4 transform hover:scale-95 text-center tracking-wider">
                   Sign Up
                 </li>
               </NavLink>

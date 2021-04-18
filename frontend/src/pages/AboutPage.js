@@ -26,10 +26,7 @@ const AboutPage = () => {
       <Header />
       <Sidebar />
       <nav style={{ paddingTop: "10vh" }}>
-        <div
-          style={{ zIndex: "10" }}
-          className="flex sm:hidden fixed w-full left-0 justify-end items-center bg-grey"
-        >
+        <div className="flex sm:hidden shadow-xl fixed w-full left-0 justify-end items-center bg-grey">
           <IoChevronDownSharp
             id="arrowDownAbout"
             onClick={openAbout}
@@ -43,7 +40,7 @@ const AboutPage = () => {
         </div>
         <ul
           id="aboutList"
-          className="hidden  sm:flex flex-col sm:flex-row bg-grey fixed flex-row justify-evenly  items-center text-white text-lg w-full text-center pb-10 sm:pb-0 mt-12 sm:mt-0"
+          className="hidden shadow-xl sm:flex flex-col sm:flex-row bg-grey fixed flex-row justify-evenly  items-center text-white text-lg w-full text-center pb-10 sm:pb-0 mt-12 sm:mt-0"
         >
           <li
             onClick={closeAbout}

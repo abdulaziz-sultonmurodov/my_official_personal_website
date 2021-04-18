@@ -2,13 +2,202 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import portfolioOne from "../images/portfolioOne.png";
+import { Link } from "react-router-dom";
+import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
 const PortfolioPage = () => {
+  const openPortfolio = () => {
+    const portfolioList = document.getElementById("portfolioList");
+    const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
+    const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
+    portfolioList.style.display = "flex";
+    arrowDownPortfolio.style.display = "none";
+    arrowUpPortfolio.style.display = "flex";
+  };
+  const closePortfolio = () => {
+    const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
+    const portfolioList = document.getElementById("portfolioList");
+    const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
+    portfolioList.style.display = "none";
+    arrowDownPortfolio.style.display = "flex";
+    arrowUpPortfolio.style.display = "none";
+  };
   return (
     <>
       <Header />
       <Sidebar />
-      <div></div>
+      <nav style={{ paddingTop: "10vh" }}>
+        <div
+          style={{ zIndex: "10" }}
+          className="flex shadow-xl lg:hidden fixed w-full left-0 justify-end items-center bg-grey"
+        >
+          <IoChevronDownSharp
+            id="arrowDownPortfolio"
+            onClick={openPortfolio}
+            className="w-6 h-6 my-3 cursor-pointer mr-4 text-white"
+          />
+          <IoChevronUpSharp
+            id="arrowUpPortfolio"
+            onClick={closePortfolio}
+            className="hidden w-6 h-6 my-3 cursor-pointer mr-4 text-white"
+          />
+        </div>
+        <ul
+          style={{ zIndex: "10" }}
+          id="portfolioList"
+          className="hidden shadow-xl lg:flex flex-col lg:flex-row bg-grey fixed flex-row justify-evenly  items-center text-white text-lg w-full text-center pb-10 lg:pb-0 mt-12 lg:mt-0 flex-wrap"
+        >
+          <li
+            onClick={closePortfolio}
+            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
+          >
+            Portfolio Websites
+          </li>
+          <li
+            onClick={closePortfolio}
+            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
+          >
+            Education Websites
+          </li>
+          <li
+            onClick={closePortfolio}
+            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
+          >
+            Ecommerce Websites
+          </li>
+          <li
+            onClick={closePortfolio}
+            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
+          >
+            Web Applications
+          </li>
+        </ul>
+      </nav>
+      <main className="pt-16 px-8 sm:pl-18 lg:pl-24">
+        <div>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+            Portfolio Websites
+          </h1>
+          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-website-one" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Personal Website (New Version)
+                </p>
+              </Link>
+            </div>
+
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-website-one" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Personal Website (New Version)
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+            Portfolio Websites
+          </h1>
+          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-website-one" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Personal Website (New Version)
+                </p>
+              </Link>
+            </div>
+
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-website-one" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Personal Website (New Version)
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+            Portfolio Websites
+          </h1>
+          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-website-one" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Personal Website (New Version)
+                </p>
+              </Link>
+            </div>
+
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-website-one" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Personal Website (New Version)
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </main>
       <Footer />
     </>
   );
