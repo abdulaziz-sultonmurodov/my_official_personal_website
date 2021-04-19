@@ -10,13 +10,13 @@ import { HiMail } from "react-icons/hi"
 
 
 const Sidebar = () => {
-    document.onscroll = function() {
-        if (window.innerHeight + window.scrollY >= document.body.clientHeight) {
-            document.getElementById('sidebar').style.display='none';
-        } else if(window.innerHeight + window.scrollY < document.body.clientHeight) {
-            document.getElementById('sidebar').style.display='flex';
-        }
-    }
+    // document.onscroll = function() {
+    //     if (window.innerHeight + window.scrollY >= document.body.clientHeight) {
+    //         document.getElementById('sidebar').style.display='none';
+    //     } else if(window.innerHeight + window.scrollY < document.body.clientHeight) {
+    //         document.getElementById('sidebar').style.display='flex';
+    //     }
+    // }
     return (
         <>
             <aside style={{zIndex: "0"}}  className="bg-white w-10 h-sidebar hidden lg:flex justify-center items-center fixed">

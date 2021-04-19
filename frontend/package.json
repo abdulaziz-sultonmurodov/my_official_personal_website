@@ -1,4 +1,5 @@
 {
+  "homepage": "http://abdulaziz-sultonmurodov.github.io/my_official_personal_website",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -12,11 +13,14 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-imageslides": "^2.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -43,6 +47,7 @@
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.1.0",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
   }

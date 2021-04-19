@@ -2,7 +2,12 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import portfolioOne from "../images/portfolioOne.png";
+import portfolioOne from "../images/personal/one/home.png";
+import portfolioTwo from "../images/personal/two/home.png";
+import portfolioThree from "../images/personal/three/home.png";
+import portfolioFour from "../images/personal/four/home.png";
+import educationOne from "../images/education/one/home.png";
+import ecommerceOne from "../images/ecommerce/one/home.png";
 import { Link } from "react-router-dom";
 import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
@@ -52,7 +57,7 @@ const PortfolioPage = () => {
             onClick={closePortfolio}
             className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
           >
-            Portfolio Websites
+            Personal Websites
           </li>
           <li
             onClick={closePortfolio}
@@ -77,14 +82,14 @@ const PortfolioPage = () => {
       <main className="pt-16 px-8 sm:pl-18 lg:pl-24">
         <div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
-            Portfolio Websites
+            Personal Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
             <div
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-website-one" className="workContainer">
+              <Link to="personal-websites-1" className="workContainer">
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -92,7 +97,7 @@ const PortfolioPage = () => {
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
-                  Personal Website (New Version)
+                  AS (New Version)
                 </p>
               </Link>
             </div>
@@ -101,15 +106,49 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-website-one" className="workContainer">
+              <Link to="personal-websites-2" className="workContainer">
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioOne}
+                    src={portfolioTwo}
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
-                  Personal Website (New Version)
+                  AS (Old Version)
+                </p>
+              </Link>
+            </div>
+
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-websites-3" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioThree}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  DarkBio
+                </p>
+              </Link>
+            </div>
+
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="personal-websites-4" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={portfolioFour}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Pretty
                 </p>
               </Link>
             </div>
@@ -118,39 +157,22 @@ const PortfolioPage = () => {
 
         <div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
-            Portfolio Websites
+            Education Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
             <div
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-website-one" className="workContainer">
+              <Link to="education-websites-1" className="workContainer">
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioOne}
+                    src={educationOne}
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
-                  Personal Website (New Version)
-                </p>
-              </Link>
-            </div>
-
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="personal-website-one" className="workContainer">
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioOne}
-                  />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
-                  Personal Website (New Version)
+                  Knowledge
                 </p>
               </Link>
             </div>
@@ -159,14 +181,38 @@ const PortfolioPage = () => {
 
         <div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
-            Portfolio Websites
+            Ecommerce Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
             <div
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-website-one" className="workContainer">
+              <Link to="ecommerce-websites-1" className="workContainer">
+                <div className=" w-full">
+                  <img
+                    className="object-contain rounded-lg imageDark w-96"
+                    src={ecommerceOne}
+                  />
+                </div>
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                  Clothes
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+            Web Applications
+          </h1>
+          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
+            <div
+              style={{ zIndex: "1" }}
+              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+            >
+              <Link to="web-applications-1" className="workContainer">
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -174,7 +220,7 @@ const PortfolioPage = () => {
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
-                  Personal Website (New Version)
+                  Calculator
                 </p>
               </Link>
             </div>
@@ -183,7 +229,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-website-one" className="workContainer">
+              <Link to="web-applications-2" className="workContainer">
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -191,7 +237,7 @@ const PortfolioPage = () => {
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
-                  Personal Website (New Version)
+                  Color Generator
                 </p>
               </Link>
             </div>
