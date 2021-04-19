@@ -6,6 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Input from "@material-ui/core/Input";
+import logo from "../images/logo.png";
 
 const SignupPage = () => {
   const [values, setValues] = React.useState({
@@ -28,9 +29,12 @@ const SignupPage = () => {
     <>
       <section className="flex flex-col lg:flex-row">
         <NavLink to="/">
-          <h1 className="milkshake text-4xl text-grey ml-4 mt-4 hover:text-darkGrey">
-            AS
-          </h1>
+          {/* <h1 className="milkshake text-4xl text-grey hover:text-darkGrey">
+                AS
+              </h1> */}
+          <div className="w-16 flex ml-4 mt-4 justify-center items-center">
+            <img className="w-full" src={logo} alt="logo" />
+          </div>
         </NavLink>
 
         <main className="flex flex-col justify-center mt-20 lg:mt-0 items-center mx-auto">

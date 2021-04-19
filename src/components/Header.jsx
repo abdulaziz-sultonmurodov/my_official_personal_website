@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import logo from "../images/logo.svg"
+import logo from "../images/logo.png"
 
 const Header = () => {
   const openNav = () => {
@@ -30,7 +30,7 @@ const Header = () => {
             <NavLink to="/">
               {/* <h1 className="milkshake text-4xl text-grey hover:text-darkGrey">
                 AS
-              </h1> */}<div className="w-40 mt-6 -mr-10 flex justify-center items-center">
+              </h1> */}<div className="w-16 flex justify-center items-center">
               <img className="w-full" src={logo} alt="logo" />
               </div>
             </NavLink>
