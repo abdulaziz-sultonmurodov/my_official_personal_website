@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import logo from "../images/logo.svg"
 
 const Header = () => {
   const openNav = () => {
@@ -27,9 +28,11 @@ const Header = () => {
         <nav style={{ zIndex: "10" }} className="bg-white h-header flex flex-row justify-around items-center fixed w-full">
           <div  className="flex flex-row items-center">
             <NavLink to="/">
-              <h1 className="milkshake text-4xl text-grey hover:text-darkGrey">
+              {/* <h1 className="milkshake text-4xl text-grey hover:text-darkGrey">
                 AS
-              </h1>
+              </h1> */}<div className="w-40 mt-6 -mr-10 flex justify-center items-center">
+              <img className="w-full" src={logo} alt="logo" />
+              </div>
             </NavLink>
           </div>
           <div  className="w-2/5">
@@ -83,11 +86,11 @@ const Header = () => {
             <div
               id="burger"
               onClick={openNav}
-              className="flex lg:hidden w-6 h-6"
+              className="flex lg:hidden w-6 h-6 mr-4"
             >
               <GiHamburgerMenu className="w-6 h-6 text-grey hover:text-darkGrey cursor-pointer" />
             </div>
-            <div id="cancel" onClick={closeNav} className="hidden w-6 h-6">
+            <div id="cancel" onClick={closeNav} className="hidden w-6 h-6 mr-6">
               <AiOutlineClose className="w-6 h-6 text-grey hover:text-darkGrey cursor-pointer" />
             </div>
           </div>

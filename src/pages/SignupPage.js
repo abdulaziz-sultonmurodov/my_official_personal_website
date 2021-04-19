@@ -86,7 +86,7 @@ const SignupPage = () => {
         </main>
         <aside className="w-full px-10 lg:px-0 lg:w-1/3 bg-grey">
           <div className="flex flex-col lg:h-screen justify-center items-center h-96">
-            <h2 className="text-2xl font-semibold lg:text-4xl text-white mt-0 lg:mt-10 lg:mb-4 mb-0">
+            <h2 className="text-2xl font-semibold lg:text-3xl text-white mt-0 lg:mt-10 lg:mb-4 mb-0">
               Welcome Back My Friend!
             </h2>
             <p className="text-white text-md text-center lg:text-xl">
