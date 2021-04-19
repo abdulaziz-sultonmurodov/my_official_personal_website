@@ -68,7 +68,7 @@ const AboutPage = () => {
           </li>
         </ul>
       </nav>
-      <main className="flex flex-col justify-center w-1/2 items-center mx-auto my-20">
+      <main className="flex flex-col justify-center w-full px-6 sm:px-8 md:px-10 lg:px-0 lg:w-1/2 items-center mx-auto my-28">
         <div>
           <h1 className="text-4xl text-darkGrey text-center">Bio</h1>
           <p className="text-grey text-xl mt-4">

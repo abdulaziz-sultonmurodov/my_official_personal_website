@@ -19,13 +19,13 @@ const HomePage = () => {
         </h1>
         <div className="flex mt-6 sm:mt-0 flex-col sm:flex-row sm:items-center">
           <Link to="/contact">
-            <button className="cursor-pointer text-lg font-semibold text-white py-4 px-4 bg-grey hover:bg-darkGrey text-center tracking-wider flex items-center border border-gray-400  hover:border-gray-900">
+            <button className="cursor-pointer text-lg font-semibold text-white py-4 px-4 bg-grey hover:bg-darkGrey text-center tracking-wider flex items-center border-2 border-gray-400 hover:border-gray-900">
               I need a website
-              <IoChevronForward className="ml-7 sm:ml-1 w-5 h-5" />
+              <IoChevronForward className="ml-6 sm:ml-1 w-5 h-5" />
             </button>
           </Link>
           <Link to="/contact">
-            <button className="cursor-pointer text-lg font-semibold tracking-wider text-grey hover:text-darkGrey px-4 py-4 border border-gray-400 hover:border-gray-900 text-center  sm:ml-4 flex items-center mt-4 sm:mt-0">
+            <button className="cursor-pointer text-lg font-semibold tracking-wider text-grey hover:text-darkGrey px-4 py-4 border border-gray-400 hover:border-gray-900 text-center sm:ml-4 flex items-center mt-4 sm:mt-0">
               I'm looking to hire
               <IoChevronForward className="ml-1 sm:ml-1 w-5 h-5" />
             </button>

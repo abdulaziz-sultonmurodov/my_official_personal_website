@@ -33,7 +33,7 @@ const SignupPage = () => {
           </h1>
         </NavLink>
 
-        <main className="flex flex-col justify-center items-center mx-auto">
+        <main className="flex flex-col justify-center mt-20 lg:mt-0 items-center mx-auto">
           <h1 className="text-3xl lg:text-5xl mb-8">Create Account</h1>
           <form className="flex flex-col">
             <div className="flex flex-row items-center justify-center">
@@ -41,7 +41,7 @@ const SignupPage = () => {
                 <FaUser className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-darkGrey cursor-pointer" />
               </div>
               <Input
-                className="md:w-96 bg-gray-200 mt-4 py-1 lg:py-2 px-6 lg:px-4 lg:w-96 focus:outline-none "
+                className="w-64 md:w-96 bg-gray-200 mt-4 py-1 lg:py-2 px-6 lg:px-4 lg:w-96 focus:outline-none "
                 placeholder="Your Name"
                 type="text"
               />
@@ -51,7 +51,7 @@ const SignupPage = () => {
                 <HiMail className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-darkGrey cursor-pointer" />
               </div>
               <Input
-                className="md:w-96 border-none bg-gray-200 mt-4 px-6 lg:px-4 lg:w-96 focus:outline-none py-1 lg:py-2"
+                className="w-64 md:w-96 border-none bg-gray-200 mt-4 px-6 lg:px-4 lg:w-96 focus:outline-none py-1 lg:py-2"
                 placeholder="Your Email"
                 type="email"
               />
@@ -62,7 +62,7 @@ const SignupPage = () => {
               </div>
 
               <Input
-                className="md:w-96 border-none bg-gray-200 mt-4  px-4 lg:w-96 focus:outline-none lg:py-0"
+                className="w-64 md:w-96 border-none bg-gray-200 mt-4  px-4 lg:w-96 focus:outline-none lg:py-0"
                 type={values.showPassword ? "text" : "password"}
                 onChange={handlePasswordChange("password")}
                 placeholder="Your Password"
@@ -84,12 +84,12 @@ const SignupPage = () => {
             ></input>
           </form>
         </main>
-        <aside className="w-full lg:w-1/3 bg-grey">
+        <aside className="w-full px-10 lg:px-0 lg:w-1/3 bg-grey">
           <div className="flex flex-col lg:h-screen justify-center items-center h-96">
-            <h2 className="text-3xl lg:text-4xl text-white mt-0 lg:mt-10 lg:mb-4 mb-0">
+            <h2 className="text-2xl font-semibold lg:text-4xl text-white mt-0 lg:mt-10 lg:mb-4 mb-0">
               Welcome Back My Friend!
             </h2>
-            <p className="text-white text-lg lg:text-xl">
+            <p className="text-white text-md text-center lg:text-xl">
               To continue your courses with me please login
             </p>
             <Link to="/login">

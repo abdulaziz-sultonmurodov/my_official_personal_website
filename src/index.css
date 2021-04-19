@@ -5,11 +5,11 @@
 
 @font-face {
   font-family: "Milkshake";
-  src: local("frontend/src/fonts/Milkshake.ttf");
+  src: local("src/fonts/Milkshake.ttf");
 }
 @font-face {
   font-family: "Poppins";
-  src: local("frontend/src/fonts/Poppins-Regular.otf");
+  src: local("src/fonts/Poppins-Regular.otf");
 }
 .milkshake {
   font-family: Milkshake;

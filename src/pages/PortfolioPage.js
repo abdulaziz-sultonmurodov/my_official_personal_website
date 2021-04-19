@@ -81,7 +81,7 @@ const PortfolioPage = () => {
       </nav>
       <main className="pt-16 px-8 sm:pl-18 lg:pl-24">
         <div>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-56 lg:w-96">
             Personal Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -156,7 +156,7 @@ const PortfolioPage = () => {
         </div>
 
         <div>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-56 lg:w-96">
             Education Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -180,7 +180,7 @@ const PortfolioPage = () => {
         </div>
 
         <div>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 w-56 lg:w-96">
             Ecommerce Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -204,7 +204,7 @@ const PortfolioPage = () => {
         </div>
 
         {/* <div>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-56 lg:w-96">
             Web Applications
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
