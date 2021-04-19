@@ -1,5 +1,4 @@
 {
-  "homepage": "http://abdulaziz-sultonmurodov.github.io/my_official_personal_website",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -19,8 +18,6 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
