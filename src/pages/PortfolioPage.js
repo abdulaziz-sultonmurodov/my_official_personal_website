@@ -203,7 +203,7 @@ const PortfolioPage = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 sm:w-96">
             Web Applications
           </h1>
@@ -242,7 +242,7 @@ const PortfolioPage = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
       <Footer />
     </>

@@ -6,22 +6,20 @@ import { useState } from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { ImLink } from "react-icons/im";
 import homeImg from "../../../images/personal/one/home.png";
-import aboutImg from "../../../images/personal/two/about.png";
+import aboutImg from "../../../images/personal/one/about.png";
 import contactImg from "../../../images/personal/one/contact.png";
-import projectImg from "../../../images/personal/two/projects.png";
-import skillsImg from "../../../images/personal/two/skills.png";
-import featureOneImg from "../../../images/personal/one/featureone.png";
-import featureTwoImg from "../../../images/personal/two/dark.png";
+import projectImg from "../../../images/personal/one/projects.png";
+import loginImg from "../../../images/personal/one/login.png";
+import featureOne from "../../../images/personal/one/featureone.png";
 
-const PortfolioTwo = () => {
+const PortfolioOne = () => {
   const images = [
     homeImg,
     aboutImg,
-    contactImg,
-    skillsImg,
     projectImg,
-    featureOneImg,
-    featureTwoImg,
+    featureOne,
+    loginImg,
+    contactImg,
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -138,4 +136,4 @@ const PortfolioTwo = () => {
   );
 };
 
-export default PortfolioTwo;
+export default PortfolioOne;

@@ -72,8 +72,12 @@ const AboutPage = () => {
         <div>
           <h1 className="text-4xl text-darkGrey text-center">Bio</h1>
           <p className="text-grey text-xl mt-4">
-            sad a asd asddsad asd asd asd as asd a sd asdsad asd asd asd sa dsa
-            asddasd as dasdas d asd asdadasd asd asd asdsad sa
+            My full name is Abdulaziz Sultonmurodov Akmalovich and I am 19. I
+            was born and live in Tashkent. I am an easy-going and talkative
+            person. I try to solve problems as fast as I can and help people if
+            I have opportunity to help them. I like to finish all the work I
+            have then, I go and relax. I cannot take a rest until I complete my
+            work.
           </p>
         </div>
         <div>
@@ -81,15 +85,23 @@ const AboutPage = () => {
             Education
           </h1>
           <p className="text-grey text-xl mt-4">
-            sad a asd asddsad asd asd asd as asd a sd asdsad asd asd asd sa dsa
-            asddasd as dasdas d asd asdadasd asd asd asdsad sa
+            I finished studying international school named "Tashkent Ulugbek
+            International School" (TUIS). I learned English in my school because
+            all subjects were taught in English by foreign teachers. Then I
+            graduated The Academic Lyceum of The World Economy and diplomacy
+            University in 2017. Afterwards, I entered The Webster University in
+            Tashkent in 2019. Now I am a sophomore student majoring in
+            Economics.
           </p>
         </div>
         <div>
           <h1 className="text-4xl text-darkGrey text-center mt-20">Work</h1>
           <p className="text-grey text-xl mt-4">
-            sad a asd asddsad asd asd asd as asd a sd asdsad asd asd asd sa dsa
-            asddasd as dasdas d asd asdadasd asd asd asdsad sa
+            I have been learning frontend development for 1.5 years and have
+            much experience in this field. I also started to have interest in
+            backend development and have been learning for 6 months but do not
+            have much experience. I have worked in an IT company for 1 month and
+            have experience on working with team.
           </p>
         </div>
         <div>
@@ -97,8 +109,10 @@ const AboutPage = () => {
             Interests
           </h1>
           <p className="text-grey text-xl mt-4">
-            sad a asd asddsad asd asd asd as asd a sd asdsad asd asd asd sa dsa
-            asddasd as dasdas d asd asdadasd asd asd asdsad sa
+            In my spare time, I love learning new languages and know some basics
+            in Spanish and Arabic. I really like playing football and tennis. I
+            like reading books such as novels or stories and it helps me to
+            develop my skills and ideas.
           </p>
         </div>
       </main>
