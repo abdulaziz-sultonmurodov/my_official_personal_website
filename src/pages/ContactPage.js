@@ -96,27 +96,38 @@ const ContactPage = () => {
               <RiMailSendLine className="w-80 h-80 text-grey hover:text-primary cursor-pointer" />
             </div>
 
-            <form id="form" className="flex flex-col w-64 lg:ml-48">
+            <form
+              action="mailto: abdulazizsultonmurodov.dev@gmail.com"
+              method="post"
+              encType="text/plain"
+              id="form"
+              className="flex flex-col w-64 lg:ml-48"
+            >
               <h2 className="text-center">Ask me your questions!</h2>
               <input
                 className="bg-gray-300 py-2 px-4 rounded-2xl focus:outline-none focus:ring-2 focus:bg-white focus:ring-black mt-4"
                 type="text"
                 placeholder="Your Name"
+                name="name"
               />
               <input
                 className="bg-gray-300 py-2 px-4 rounded-2xl focus:outline-none focus:ring-2 focus:bg-white focus:ring-black mt-4"
                 type="email"
                 placeholder="Your Email"
+                name="email"
               />
               <textarea
                 className="bg-gray-300 py-2 px-4 rounded-2xl focus:outline-none focus:ring-2 focus:bg-white  focus:ring-black mt-4"
                 cols="30"
                 rows="5"
+                name="message"
                 placeholder="Your Questions..."
               ></textarea>
               <input
-                className="mt-4 rounded-2xl bg-darkGrey text-white py-2 w-1/2 mx-auto hover:bg-primary cursor-pointer"
                 type="submit"
+                className="mt-4 rounded-2xl bg-darkGrey text-white py-2 w-1/2 mx-auto hover:bg-primary cursor-pointer"
+                value="Submit"
+                name="submit"
               />
             </form>
           </div>
