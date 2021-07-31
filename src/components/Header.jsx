@@ -178,7 +178,7 @@ const Header = () => {
                     <FaLinkedin className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
                 </div>   
-                <div className="text-center my-4">
+                <div className="text-center mb-8 mt-4">
                 <p className="text-grey tracking-widest ">&copy; Abdulaziz Sultonmurodov,  2021</p>
             </div>
             </div>
