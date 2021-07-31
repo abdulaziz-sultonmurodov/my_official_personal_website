@@ -35,18 +35,20 @@ const HomePage = () => {
           <span className="hover:text-primary cursor-pointer">e</span>
           <span className="hover:text-primary cursor-pointer">r</span>
         </h1>
-        <div className="flex mt-6 sm:mt-0 flex-col sm:flex-row sm:items-center">
-          <Link to="/contact">
-            <button className="focus:outline-none cursor-pointer text-lg font-bold text-darkGrey hover:text-white py-4 px-4 text-center flex rounded-lg items-center border-2 border-darkGrey hover:bg-primary">
-              I need a website
-              <IoChevronForward className="ml-6 sm:ml-1 w-5 h-5" />
-            </button>
+        <div className="flex mt-6 sm:mt-0 flex-col sm:flex-row justify-center sm:items-center">
+          <Link
+            className="focus:outline-none cursor-pointer text-lg font-bold text-darkGrey hover:text-white py-4 px-8 text-center flex rounded-lg items-center border-2 border-darkGrey hover:bg-primary"
+            to="/contact"
+          >
+            I need a website
+            <IoChevronForward className="w-5 h-5" />
           </Link>
-          <Link to="/contact">
-            <button className="focus:outline-none cursor-pointer text-lg font-bold text-darkGrey  px-4 py-4 border-2 border-darkGrey hover:text-white hover:bg-primary  rounded-lg text-center sm:ml-4 flex items-center mt-4 sm:mt-0">
-              I'm looking to hire
-              <IoChevronForward className="ml-1 sm:ml-1 w-5 h-5" />
-            </button>
+          <Link
+            className="focus:outline-none cursor-pointer text-lg font-bold text-darkGrey  px-8 py-4 border-2 border-darkGrey hover:text-white hover:bg-primary  rounded-lg text-center sm:ml-4 flex items-center mt-4 sm:mt-0"
+            to="/contact"
+          >
+            I'm looking to hire
+            <IoChevronForward className=" w-5 h-5" />
           </Link>
         </div>
       </main>

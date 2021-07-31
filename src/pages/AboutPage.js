@@ -73,7 +73,7 @@ const AboutPage = () => {
       </nav> */}
       <main className="flex flex-col justify-center w-full px-6 sm:px-8 md:px-10 lg:px-0 lg:w-1/2 items-center mx-auto py-24">
         <div>
-          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey">
+          <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey">
             <IoPerson className="mr-2 hover:text-primary cursor-pointer" /> Bio
           </h1>
           <p className="text-gray-600 text-xl mt-4">
@@ -86,7 +86,7 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey text-center mt-20">
+          <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey text-center mt-20">
             <IoIosSchool className="mr-2 hover:text-primary cursor-pointer" />{" "}
             Education
           </h1>
@@ -101,7 +101,7 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey text-center mt-20">
+          <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey text-center mt-20">
             <MdWork className="mr-2 hover:text-primary cursor-pointer" /> Work
           </h1>
           <p className="text-gray-600 text-xl mt-4">
@@ -113,7 +113,7 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey text-center mt-20">
+          <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey text-center mt-20">
             <IoFootball className="mr-2 hover:text-primary cursor-pointer" />{" "}
             Interests / Hobbies
           </h1>

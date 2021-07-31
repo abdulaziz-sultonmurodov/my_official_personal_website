@@ -16,7 +16,7 @@ const EducationOne = () => {
   return (
     <>
       <Header />
-      <main className="px-10 pt-24 flex flex-col lg:flex-row  items-center justify-evenly">
+      <main className="px-10 pt-24 flex flex-col lg:flex-row mb-10 items-center justify-evenly">
         <ImageSlides
           index={0}
           tapClose={true}

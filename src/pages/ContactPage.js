@@ -10,40 +10,75 @@ const ContactPage = () => {
     <>
       <Header />
       <Sidebar />
-      <main className="flex flex-col justify-center items-center w-full pt-32">
-        <h1 className="text-darkGrey text-4xl mb-6">Contact</h1>
-        <p className="text-lightGrey tracking-wider leading-9 text-sm sm:text-2xl">
+      <main className="flex flex-col justify-center items-center w-full pt-24">
+        <h1 className="text-darkGrey text-3xl sm:text-4xl mb-6">Contact</h1>
+        <div className="text-lightGrey tracking-wider leading-9 text-sm sm:text-2xl break-all px-4">
           <span className="text-lightGrey">if</span> (
-          <span className="text-primary">Telegram</span>) {"{"}
+          <a
+            className="text-primary cursor-pointer hover:underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://t.me/abdulaziz_sultonmurodov_channel"
+          >
+            Telegram
+          </a>
+          ) {"{"}
           <br />
-          <span className="ml-6 text-darkGrey font-bold">
-            abdulaziz_sultonmurodov;
-          </span>
+          <a
+            className="ml-4 text-darkGrey font-bold cursor-pointer hover:text-primary"
+            target="_blank"
+            rel="noreferrer"
+            href="https://t.me/abdulaziz_sultonmurodov_channel"
+          >
+            abdulaziz_sultonmurodov
+          </a>
           <br />
           {"};"} <span className="text-lightGrey">else if</span>(
-          <span className="text-primary">Instagram</span>) {"{"}
+          <a
+            className="text-primary cursor-pointer hover:underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/abdulaziz_sultonmurodov"
+          >
+            Instagram
+          </a>
+          ) {"{"}
           <br />
-          <span className="ml-6 text-darkGrey font-bold">
-            abdulaziz_sultonmurodov;
-          </span>
+          <a
+            className="ml-4 text-darkGrey font-bold cursor-pointer hover:text-primary"
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/abdulaziz_sultonmurodov"
+          >
+            abdulaziz_sultonmurodov
+          </a>
           <br />
           {"};"} <span className="text-lightGrey">else if</span> (
-          <span className="text-primary">Email</span>) {"{"}
+          <a
+            className="text-primary cursor-pointer hover:underline"
+            href="mailto: abdulazizsultonmurodov.dev@gmail.com"
+          >
+            Email
+          </a>
+          ) {"{"}
           <br />
-          <span className="ml-6 text-darkGrey font-bold">
-            abdulazizsultonmurodov.dev@gmail.com;
-          </span>
+          <a
+            className="ml-4 text-darkGrey font-bold cursor-pointer hover:text-primary"
+            href="mailto: abdulazizsultonmurodov.dev@gmail.com"
+          >
+            abdulazizsultonmurodov.dev@gmail.com
+          </a>
           <br />
           {"};"} <span className="text-lightGrey">else</span> {"{"}
           <br />
-          <span className="ml-6 text-darkGrey font-bold">
-            Submit the form below;
+          <span className="ml-4 text-darkGrey font-bold">
+            Submit the form below
           </span>
           <br />
           {"};"}
-        </p>
+        </div>
 
-        <div className="flex flex-col justify-center mt-20 items-center">
+        <div className="flex flex-col justify-center mt-20 items-center mb-10">
           <div className="flex flex-col">
             <h1 className="uppercase text-lg text-center sm:text-2xl lg:text-3xl text-darkGrey">
               Have some questions?

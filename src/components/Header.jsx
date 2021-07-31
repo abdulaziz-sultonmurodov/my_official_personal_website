@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from "../images/logo.png"
+import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
+import { IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
+import { HiMail } from "react-icons/hi";
 
 const Header = () => {
   const openNav = () => {
@@ -99,52 +102,87 @@ const Header = () => {
 
         <div
           id="burgerList"
-          className="hidden h-screen border-t border-gray-200 "
+          className="hidden h-screen"
         >
-          <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-screen fixed w-full pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
-            <NavLink onClick={closeNav} exact activeClassName="navbar-active" to="/">
-              <li  className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+          <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-screen fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
+            <div>
+              <li className="my-2">
+            <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} exact activeStyle={{color: "#ff6700"}} to="/">
                 Home
-              </li>
             </NavLink>
-            <NavLink onClick={closeNav} activeClassName="navbar-active" to="/about">
-              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              </li>
+              <li className="my-2">
+            <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/about">
                 About
-              </li>
             </NavLink>
-            <NavLink onClick={closeNav} activeClassName="navbar-active" to="/portfolio">
-              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              </li>
+              <li className="my-2">
+            <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/portfolio">
                 Portfolio
-              </li>
             </NavLink>
-            {/* <NavLink onClick={closeNav} activeClassName="navbar-active" to="/courses">
-              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              </li>
+            {/* <NavLink onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/courses">
+              <li className="text-grey hover:text-primary block  rounded-md text-base font-semibold tracking-wider">
                 Courses
               </li>
             </NavLink> */}
-            {/* <NavLink onClick={closeNav} activeClassName="navbar-active" to="/blog">
-              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+            {/* <NavLink onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/blog">
+              <li className="text-grey hover:text-primary block  rounded-md text-base font-semibold tracking-wider">
                 Blog
               </li>
             </NavLink> */}
-            <NavLink onClick={closeNav} activeClassName="navbar-active" to="/contact">
-              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li className="my-2">
+            <NavLink className="text-grey hover:text-primary rounded-md text-base font-semibold tracking-wider" onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/contact">
                 Contact
-              </li>
             </NavLink>
+              </li>
             <div>
-              <NavLink onClick={closeNav} to="/login">
-                <li className="text-darkGrey hover:text-primary block w-48 mx-auto py-2  text-base font-semibold border rounded-lg border-darkGrey hover:border-primary mt-4 text-center tracking-wider">
+          
+                <li>
+              <NavLink className="text-darkGrey hover:text-primary block w-48 mx-auto py-2  text-base font-semibold border-2 rounded-lg border-darkGrey hover:border-primary mt-4 text-center tracking-wider" onClick={closeNav} to="/login">
                   Login
-                </li>
               </NavLink>
-              <NavLink onClick={closeNav} to="/signup">
-                <li className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-primary rounded-lg mt-4 text-center tracking-wider">
+                </li>
+                <li>
+              <NavLink className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-primary rounded-lg mt-4 text-center tracking-wider" onClick={closeNav} to="/signup">
                   Sign Up
-                </li>
               </NavLink>
+                </li>
+              </div>
+              </div>
+            <div className="pb-6">
+            <div className="flex flex-row justify-center items-center">
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
+                    <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
+                    <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="/">
+                    <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="/">
+                    <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
+                    <IoLogoGithub className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
+                    <IoLogoYoutube className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <FaLinkedin className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    </a>
+                </div>   
+                <div className="text-center my-4">
+                <p className="text-grey tracking-widest ">&copy; Abdulaziz Sultonmurodov,  2021</p>
             </div>
+            </div>  
           </ul>
+         
         </div>
       </header>
     </>

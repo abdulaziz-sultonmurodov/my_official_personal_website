@@ -28,7 +28,7 @@ const PortfolioTwo = () => {
   return (
     <>
       <Header />
-      <main className="px-10 pt-24 flex flex-col lg:flex-row  items-center justify-evenly">
+      <main className="px-10 pt-24 flex flex-col lg:flex-row  items-center justify-evenly mb-10">
         <ImageSlides
           index={0}
           tapClose={true}
