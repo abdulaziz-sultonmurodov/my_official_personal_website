@@ -149,8 +149,7 @@ const Header = () => {
               </NavLink>
                 </li>
               </div>
-              </div>
-            <div className="pb-6">
+              <div className="mt-64">
             <div className="flex flex-row justify-center items-center">
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
                     <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
@@ -181,6 +180,8 @@ const Header = () => {
                 <p className="text-grey tracking-widest ">&copy; Abdulaziz Sultonmurodov,  2021</p>
             </div>
             </div>  
+              </div>
+           
           </ul>
          
         </div>
