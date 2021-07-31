@@ -27,10 +27,10 @@ const Sidebar = () => {
                     <a target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
                     <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="/">
+                    <a target="_blank" rel="noreferrer" href="https://facebook.com/abdulaziz.sultonmurodov.a">
                     <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="/">
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com/abdulaziz__s_a">
                     <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
                     <a target="_blank" rel="noreferrer" href="mailto:abdulazizsultonmurodov.dev@gmail.com">

@@ -30,13 +30,13 @@ const Footer = () => {
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
                     <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="/">
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://facebook.com/abdulaziz.sultonmurodov.a">
                     <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="/">
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://twitter.com/abdulaziz__s_a">
                     <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="mailto:abdulazizsultonmurodov.dev@gmail.com">
                     <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
