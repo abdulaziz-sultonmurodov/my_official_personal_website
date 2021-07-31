@@ -1,4 +1,7 @@
 import React from "react";
+import { IoIosSchool } from "react-icons/io";
+import { IoFootball, IoPerson } from "react-icons/io5";
+import { MdWork } from "react-icons/md";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
@@ -70,7 +73,9 @@ const AboutPage = () => {
       </nav> */}
       <main className="flex flex-col justify-center w-full px-6 sm:px-8 md:px-10 lg:px-0 lg:w-1/2 items-center mx-auto py-24">
         <div>
-          <h1 className="text-4xl text-darkGrey text-center">Bio</h1>
+          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey">
+            <IoPerson className="mr-2 hover:text-primary cursor-pointer" /> Bio
+          </h1>
           <p className="text-gray-600 text-xl mt-4">
             My full name is Abdulaziz Sultonmurodov Akmalovich and I am 19. I
             was born and live in Tashkent. I am an easy-going and talkative
@@ -81,7 +86,8 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-4xl text-darkGrey text-center mt-20">
+          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey text-center mt-20">
+            <IoIosSchool className="mr-2 hover:text-primary cursor-pointer" />{" "}
             Education
           </h1>
           <p className="text-gray-600 text-xl mt-4">
@@ -95,7 +101,9 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-4xl text-darkGrey text-center mt-20">Work</h1>
+          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey text-center mt-20">
+            <MdWork className="mr-2 hover:text-primary cursor-pointer" /> Work
+          </h1>
           <p className="text-gray-600 text-xl mt-4">
             I have been learning frontend development for 1.5 years and have
             much experience in this field. I also started to have interest in
@@ -105,8 +113,9 @@ const AboutPage = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-4xl text-darkGrey text-center mt-20">
-            Interests
+          <h1 className="flex flex-row items-center justify-center text-3xl text-darkGrey text-center mt-20">
+            <IoFootball className="mr-2 hover:text-primary cursor-pointer" />{" "}
+            Interests / Hobbies
           </h1>
           <p className="text-gray-600 text-xl mt-4">
             In my spare time, I love learning new languages and know some basics

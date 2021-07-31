@@ -24,29 +24,29 @@ const Footer = () => {
             </ul>    
             </div> 
             <div className="flex flex-row justify-center items-center mt-8 lg:mt-4">
-                    <a target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
                     <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
-                    <IoLogoInstagram className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
+                    <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="/">
-                    <IoLogoFacebook className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="/">
+                    <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="/">
-                    <IoLogoTwitter className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="/">
+                    <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
-                    <HiMail className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
-                    <IoLogoGithub className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
+                    <IoLogoGithub className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
-                    <IoLogoYoutube className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
+                    <IoLogoYoutube className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
-                    <FaLinkedin className="ml-5 h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <FaLinkedin className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
                 </div>   
             <div className="text-center my-4">

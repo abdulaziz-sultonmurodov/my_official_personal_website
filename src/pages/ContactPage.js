@@ -10,7 +10,8 @@ const ContactPage = () => {
     <>
       <Header />
       <Sidebar />
-      <main className="flex flex-col justify-center items-center w-full pt-36">
+      <main className="flex flex-col justify-center items-center w-full pt-32">
+        <h1 className="text-darkGrey text-4xl mb-6">Contact</h1>
         <p className="text-lightGrey tracking-wider leading-9 text-sm sm:text-2xl">
           <span className="text-lightGrey">if</span> (
           <span className="text-primary">Telegram</span>) {"{"}
@@ -33,9 +34,11 @@ const ContactPage = () => {
             abdulazizsultonmurodov.dev@gmail.com;
           </span>
           <br />
-          {"};"} <span className="text-lightGrey font-bold">else</span> {"{"}
+          {"};"} <span className="text-lightGrey">else</span> {"{"}
           <br />
-          <span className="ml-6 text-darkGrey">Submit the form below;</span>
+          <span className="ml-6 text-darkGrey font-bold">
+            Submit the form below;
+          </span>
           <br />
           {"};"}
         </p>
@@ -54,7 +57,9 @@ const ContactPage = () => {
             <div className="hidden lg:flex">
               <RiMailSendLine className="w-80 h-80 text-grey hover:text-primary cursor-pointer" />
             </div>
+
             <form className="flex flex-col w-64 lg:ml-48">
+              <h2 className="text-center">Ask me your questions!</h2>
               <input
                 className="bg-gray-300 py-2 px-4 rounded-2xl focus:outline-none focus:ring-2 focus:bg-white focus:ring-black mt-4"
                 type="text"
