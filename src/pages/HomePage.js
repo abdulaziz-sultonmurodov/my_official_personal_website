@@ -18,7 +18,7 @@ const HomePage = () => {
           alt="a boy sitting on a table"
         />
       </div>
-      <main className="h-sidebar flex flex-col items-center justify-start sm:justify-center">
+      <main className="h-full mb-24 sm:mb-0 sm:h-sidebar flex flex-col items-center justify-start sm:justify-center">
         <h1 className="text-md sm:text-2xl lg:text-3xl text-grey">
           Hello my friends, my name is Abdulaziz
         </h1>
