@@ -134,12 +134,12 @@ const Header = () => {
             </NavLink>
             <div>
               <NavLink onClick={closeNav} to="/login">
-                <li className="text-darkGrey hover:text-primary block w-48 mx-auto py-2  text-base font-semibold border border-darkGrey hover:border-primary mt-4 text-center tracking-wider">
+                <li className="text-darkGrey hover:text-primary block w-48 mx-auto py-2  text-base font-semibold border rounded-lg border-darkGrey hover:border-primary mt-4 text-center tracking-wider">
                   Login
                 </li>
               </NavLink>
               <NavLink onClick={closeNav} to="/signup">
-                <li className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-primary  mt-4 text-center tracking-wider">
+                <li className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-primary rounded-lg mt-4 text-center tracking-wider">
                   Sign Up
                 </li>
               </NavLink>
