@@ -4,13 +4,21 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { IoChevronForward } from "react-icons/io5";
+import HomePageCover from "../images/homepage.svg";
 
 const HomePage = () => {
   return (
     <>
       <Header />
       <Sidebar />
-      <main className="h-screen flex flex-col items-center justify-center">
+      <div className="w-96 h-96 sm:hidden pt-24 mb-4 flex flex-row items-center justify-center w-full">
+        <img
+          className="w-full h-full"
+          src={HomePageCover}
+          alt="a boy sitting on a table"
+        />
+      </div>
+      <main className="h-sidebar flex flex-col items-center justify-start sm:justify-center">
         <h1 className="text-md sm:text-2xl lg:text-3xl text-grey">
           Hello my friends, my name is Abdulaziz
         </h1>
@@ -52,6 +60,13 @@ const HomePage = () => {
           </Link>
         </div>
       </main>
+      <div className="w-96 h-96 hidden -mt-32 sm:flex sm:flex-row items-center justify-center w-full">
+        <img
+          className="w-full h-full"
+          src={HomePageCover}
+          alt="a boy sitting on a table"
+        />
+      </div>
       <Footer />
     </>
   );
