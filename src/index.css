@@ -28,7 +28,7 @@ body {
 }
 
 .navbar-active {
-  border-bottom: 2px solid #000000ff;
+  border-bottom: 2px solid #ff6700;
 }
 .navbar-active:hover {
   border-bottom: 2px solid #ff6700;

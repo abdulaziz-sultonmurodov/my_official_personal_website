@@ -149,7 +149,7 @@ const Header = () => {
               </NavLink>
                 </li>
               </div>
-              <div className="mt-64">
+              <div className="mt-80">
             <div className="flex flex-row justify-center items-center">
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
                     <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
