@@ -71,9 +71,12 @@ const ContactPage = () => {
           <br />
           {"};"} <span className="text-lightGrey">else</span> {"{"}
           <br />
-          <span className="ml-4 text-darkGrey font-bold">
+          <a
+            href="#form"
+            className="ml-4 text-darkGrey font-bold cursor-pointer hover:text-primary"
+          >
             Submit the form below
-          </span>
+          </a>
           <br />
           {"};"}
         </div>
@@ -93,7 +96,7 @@ const ContactPage = () => {
               <RiMailSendLine className="w-80 h-80 text-grey hover:text-primary cursor-pointer" />
             </div>
 
-            <form className="flex flex-col w-64 lg:ml-48">
+            <form id="form" className="flex flex-col w-64 lg:ml-48">
               <h2 className="text-center">Ask me your questions!</h2>
               <input
                 className="bg-gray-300 py-2 px-4 rounded-2xl focus:outline-none focus:ring-2 focus:bg-white focus:ring-black mt-4"
