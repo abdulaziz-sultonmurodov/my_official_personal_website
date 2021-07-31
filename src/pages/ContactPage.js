@@ -15,21 +15,25 @@ const ContactPage = () => {
           <span className="text-lightGrey">if</span> (
           <span className="text-primary">Telegram</span>) {"{"}
           <br />
-          <span className="ml-6 text-darkGrey">abdulaziz_sultonmurodov;</span>
+          <span className="ml-6 text-darkGrey font-bold">
+            abdulaziz_sultonmurodov;
+          </span>
           <br />
           {"};"} <span className="text-lightGrey">else if</span>(
           <span className="text-primary">Instagram</span>) {"{"}
           <br />
-          <span className="ml-6 text-darkGrey">abdulaziz_sultonmurodov;</span>
+          <span className="ml-6 text-darkGrey font-bold">
+            abdulaziz_sultonmurodov;
+          </span>
           <br />
           {"};"} <span className="text-lightGrey">else if</span> (
           <span className="text-primary">Email</span>) {"{"}
           <br />
-          <span className="ml-6 text-darkGrey">
+          <span className="ml-6 text-darkGrey font-bold">
             abdulazizsultonmurodov.dev@gmail.com;
           </span>
           <br />
-          {"};"} <span className="text-lightGrey">else</span> {"{"}
+          {"};"} <span className="text-lightGrey font-bold">else</span> {"{"}
           <br />
           <span className="ml-6 text-darkGrey">Submit the form below;</span>
           <br />
