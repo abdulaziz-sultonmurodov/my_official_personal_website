@@ -102,9 +102,9 @@ const Header = () => {
 
         <div
           id="burgerList"
-          className="hidden h-screen"
+          className="hidden"
         >
-          <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-screen fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
+          <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-full fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
             <div>
               <li className="my-2">
             <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} exact activeStyle={{color: "#ff6700"}} to="/">
@@ -149,8 +149,10 @@ const Header = () => {
               </NavLink>
                 </li>
               </div>
-              <div className="mt-80">
-            <div className="flex flex-row justify-center items-center">
+            
+              </div>
+              <div>
+              <div className="flex flex-row justify-center items-center">
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
                     <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
@@ -179,12 +181,14 @@ const Header = () => {
                 <div className="text-center my-4">
                 <p className="text-grey tracking-widest ">&copy; Abdulaziz Sultonmurodov,  2021</p>
             </div>
-            </div>  
-              </div>
-           
+            </div>
           </ul>
          
+       
+          
+       
         </div>
+        
       </header>
     </>
   );
