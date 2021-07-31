@@ -29,9 +29,9 @@ const EducationOne = () => {
             <div className="flex w-full lg:w-3/5 flex-col">
               <div
                 onClick={() => {
-                  if (isOpen == true) {
+                  if (isOpen === true) {
                     setIsOpen(false);
-                  } else if (isOpen == false) {
+                  } else if (isOpen === false) {
                     setIsOpen(true);
                   } else {
                     setIsOpen(false);
@@ -102,6 +102,7 @@ const EducationOne = () => {
               <div className="flex flex-col sm:flex-row">
                 <a
                   href="https://github.com/abdulaziz-sultonmurodov/knowledge.git"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <p className="flex items-center mt-6 cursor-pointer hover:text-darkGrey">
@@ -110,6 +111,7 @@ const EducationOne = () => {
                 </a>
                 <a
                   href="https://abdulaziz-sultonmurodov.github.io/knowledge/"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <p className="flex items-center mt-6 ml-0 sm:ml-10 cursor-pointer hover:text-darkGrey">

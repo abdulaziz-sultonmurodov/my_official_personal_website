@@ -4,12 +4,16 @@ module.exports = {
   theme: {
     borderColor: (theme) => ({
       ...theme("colors"),
-      grey: "#8b8b81",
+      grey: "#000000ff",
+      primary: "#ff6700",
+      lightGrey: "#888888",
     }),
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      darkGrey: "#333333",
-      grey: "#8b8b81",
+      darkGrey: "#000000ff",
+      grey: "#000000ff",
+      primary: "#ff6700",
+      lightGrey: "#888888",
     }),
     extend: {
       height: {
@@ -17,8 +21,10 @@ module.exports = {
         header: "10vh",
       },
       textColor: {
-        grey: "#8b8b81",
-        darkGrey: "#333333",
+        grey: "#000000ff",
+        darkGrey: "#000000ff",
+        primary: "#ff6700",
+        lightGrey: "#888888",
       },
     },
   },

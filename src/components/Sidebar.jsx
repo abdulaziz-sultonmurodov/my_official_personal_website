@@ -21,29 +21,29 @@ const Sidebar = () => {
         <>
             <aside style={{zIndex: "0"}}  className="bg-white w-10 h-sidebar hidden lg:flex justify-center items-center fixed">
                 <div id="sidebar" className="flex flex-col justify-evenly items-center h-1/2">
-                    <a target="_blank" href="https://t.me/abdulaziz_sultonmurodov_channel">
-                    <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
+                    <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="https://instagram.com/abdulaziz_sultonmurodov">
-                    <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
+                    <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="#">
-                    <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="/">
+                    <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="#">
-                    <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="/">
+                    <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="mailto:abdulazizsultonmurodov.dev@gmail.com">
-                    <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="mailto:abdulazizsultonmurodov.dev@gmail.com">
+                    <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="https://github.com/abdulaziz-sultonmurodov">
-                    <IoLogoGithub className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
+                    <IoLogoGithub className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
-                    <IoLogoYoutube className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
+                    <IoLogoYoutube className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
-                    <a target="_blank" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
-                    <FaLinkedin className="h-5 w-5 cursor-pointer text-grey hover:text-darkGrey" />
+                    <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
+                    <FaLinkedin className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
                     </a>
                 </div>   
             </aside> 

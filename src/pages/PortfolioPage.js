@@ -9,30 +9,30 @@ import portfolioFour from "../images/personal/four/home.png";
 import educationOne from "../images/education/one/home.png";
 import ecommerceOne from "../images/ecommerce/one/home.png";
 import { Link } from "react-router-dom";
-import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
+// import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
 const PortfolioPage = () => {
-  const openPortfolio = () => {
-    const portfolioList = document.getElementById("portfolioList");
-    const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
-    const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
-    portfolioList.style.display = "flex";
-    arrowDownPortfolio.style.display = "none";
-    arrowUpPortfolio.style.display = "flex";
-  };
-  const closePortfolio = () => {
-    const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
-    const portfolioList = document.getElementById("portfolioList");
-    const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
-    portfolioList.style.display = "none";
-    arrowDownPortfolio.style.display = "flex";
-    arrowUpPortfolio.style.display = "none";
-  };
+  // const openPortfolio = () => {
+  //   const portfolioList = document.getElementById("portfolioList");
+  //   const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
+  //   const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
+  //   portfolioList.style.display = "flex";
+  //   arrowDownPortfolio.style.display = "none";
+  //   arrowUpPortfolio.style.display = "flex";
+  // };
+  // const closePortfolio = () => {
+  //   const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
+  //   const portfolioList = document.getElementById("portfolioList");
+  //   const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
+  //   portfolioList.style.display = "none";
+  //   arrowDownPortfolio.style.display = "flex";
+  //   arrowUpPortfolio.style.display = "none";
+  // };
   return (
     <>
       <Header />
       <Sidebar />
-      <nav style={{ paddingTop: "10vh" }}>
+      {/* <nav style={{ paddingTop: "10vh" }}>
         <div
           style={{ zIndex: "10" }}
           className="flex shadow-xl lg:hidden fixed w-full left-0 justify-end items-center bg-grey"
@@ -78,10 +78,10 @@ const PortfolioPage = () => {
             Web Applications
           </li>
         </ul>
-      </nav>
-      <main className="pt-16 px-8 sm:pl-18 lg:pl-24">
+      </nav> */}
+      <main className="pt-24 px-8 sm:pl-18 lg:pl-24">
         <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-56 lg:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-56 lg:w-4/12">
             Personal Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -94,9 +94,10 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={portfolioOne}
+                    alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-primary text-center">
                   AS (New Version)
                 </p>
               </Link>
@@ -111,6 +112,7 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={portfolioTwo}
+                    alt="Portfolio"
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
@@ -128,6 +130,7 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={portfolioThree}
+                    alt="Portfolio"
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
@@ -145,6 +148,7 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={portfolioFour}
+                    alt="Portfolio"
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
@@ -156,7 +160,7 @@ const PortfolioPage = () => {
         </div>
 
         <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-56 lg:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-56 lg:w-4/12">
             Education Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -169,6 +173,7 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={educationOne}
+                    alt="Portfolio"
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
@@ -180,7 +185,7 @@ const PortfolioPage = () => {
         </div>
 
         <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-48 w-56 lg:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-48 w-56 lg:w-4/12">
             Ecommerce Websites
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -193,6 +198,7 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={ecommerceOne}
+                    alt="Portfolio"
                   />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
@@ -204,7 +210,7 @@ const PortfolioPage = () => {
         </div>
 
         {/* <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-gray-500 w-56 lg:w-96">
+          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-56 lg:w-4/12">
             Web Applications
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
@@ -217,7 +223,8 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={portfolioOne}
-                  />
+                    alt="Portfolio"
+                    />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
                   Calculator
@@ -234,7 +241,8 @@ const PortfolioPage = () => {
                   <img
                     className="object-contain rounded-lg imageDark w-96"
                     src={portfolioOne}
-                  />
+                    alt="Portfolio"
+                    />
                 </div>
                 <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
                   Color Generator

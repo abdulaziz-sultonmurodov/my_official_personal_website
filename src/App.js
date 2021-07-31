@@ -1,6 +1,6 @@
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import PortfolioPage from "./pages/PortfolioPage";
 import BlogPage from "./pages/Blog";

@@ -28,7 +28,7 @@ const Header = () => {
         <nav style={{ zIndex: "10" }} className="bg-white h-header flex flex-row justify-around items-center fixed w-full">
           <div  className="flex flex-row items-center">
             <NavLink to="/">
-              {/* <h1 className="milkshake text-4xl text-grey hover:text-darkGrey">
+              {/* <h1 className="milkshake text-4xl text-grey hover:text-primary">
                 AS
               </h1> */}<div className="w-16 flex justify-center items-center">
               <img className="w-full" src={logo} alt="logo" />
@@ -38,32 +38,32 @@ const Header = () => {
           <div  className="w-2/5">
             <ul  className="hidden lg:flex flex-row justify-between items-center">
               <NavLink exact activeClassName="navbar-active" to="/">
-                <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
+                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
                   Home
                 </li>
               </NavLink>
               <NavLink activeClassName="navbar-active" to="/about">
-                <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
+                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
                   About
                 </li>
               </NavLink>
               <NavLink activeClassName="navbar-active" to="/portfolio">
-                <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
+                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
                   Portfolio
                 </li>
               </NavLink>
               {/* <NavLink activeClassName="navbar-active" to="/courses">
-                <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
+                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
                   Courses
                 </li>
               </NavLink> */}
               {/* <NavLink activeClassName="navbar-active" to="/blog">
-                <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey tracking-wider">
+                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
                   Blog
                 </li>
               </NavLink> */}
               <NavLink activeClassName="navbar-active" to="/contact">
-                <li className="cursor-pointer font-semibold text-grey hover:text-darkGrey">
+                <li className="cursor-pointer font-semibold text-grey hover:text-primary">
                   Contact
                 </li>
               </NavLink>
@@ -73,12 +73,12 @@ const Header = () => {
           <div>
             <ul className="hidden lg:flex flex-row items-center">
               <NavLink to="login">
-                <li className="mr-5 cursor-pointer font-semibold tracking-wider text-grey hover:text-darkGrey block px-4 py-2 text-base border border-gray-400 hover:border-gray-900 transform hover:scale-95 text-center">
+                <li className="mr-5 rounded-lg cursor-pointer font-semibold tracking-wider text-darkGrey hover:text-primary block px-4 py-2 text-base border-2 border-darkGrey hover:border-primary text-center">
                   Login
                 </li>
               </NavLink>
               <NavLink to="signup">
-                <li className="cursor-pointer font-semibold text-white block py-2 px-4 text-base bg-grey hover:bg-darkGrey transform hover:scale-95 text-center tracking-wider">
+                <li className="cursor-pointer font-semibold text-white block py-2 px-4 text-base bg-darkGrey hover:bg-primary rounded-lg border-2 border-darkGrey text-center tracking-wider">
                   Signup
                 </li>
               </NavLink>
@@ -88,10 +88,10 @@ const Header = () => {
               onClick={openNav}
               className="flex lg:hidden w-6 h-6 mr-4"
             >
-              <GiHamburgerMenu className="w-6 h-6 text-grey hover:text-darkGrey cursor-pointer" />
+              <GiHamburgerMenu className="w-6 h-6 text-grey hover:text-primary cursor-pointer" />
             </div>
             <div id="cancel" onClick={closeNav} className="hidden w-6 h-6 mr-6">
-              <AiOutlineClose className="w-6 h-6 text-grey hover:text-darkGrey cursor-pointer" />
+              <AiOutlineClose className="w-6 h-6 text-grey hover:text-primary cursor-pointer" />
             </div>
           </div>
         </nav>
@@ -103,43 +103,43 @@ const Header = () => {
         >
           <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-screen fixed w-full pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
             <NavLink onClick={closeNav} exact activeClassName="navbar-active" to="/">
-              <li  className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li  className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Home
               </li>
             </NavLink>
             <NavLink onClick={closeNav} activeClassName="navbar-active" to="/about">
-              <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 About
               </li>
             </NavLink>
             <NavLink onClick={closeNav} activeClassName="navbar-active" to="/portfolio">
-              <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Portfolio
               </li>
             </NavLink>
             {/* <NavLink onClick={closeNav} activeClassName="navbar-active" to="/courses">
-              <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Courses
               </li>
             </NavLink> */}
             {/* <NavLink onClick={closeNav} activeClassName="navbar-active" to="/blog">
-              <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Blog
               </li>
             </NavLink> */}
             <NavLink onClick={closeNav} activeClassName="navbar-active" to="/contact">
-              <li className="text-grey hover:text-darkGrey block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
+              <li className="text-grey hover:text-primary block px-3 py-2 rounded-md text-base font-semibold tracking-wider">
                 Contact
               </li>
             </NavLink>
             <div>
               <NavLink onClick={closeNav} to="/login">
-                <li className="text-grey hover:text-darkGrey block w-48 mx-auto py-2  text-base font-semibold border border-gray-400 hover:border-gray-900 transform hover:scale-95 mt-4 text-center tracking-wider">
+                <li className="text-darkGrey hover:text-primary block w-48 mx-auto py-2  text-base font-semibold border border-darkGrey hover:border-primary mt-4 text-center tracking-wider">
                   Login
                 </li>
               </NavLink>
               <NavLink onClick={closeNav} to="/signup">
-                <li className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-grey hover:bg-darkGrey mt-4 transform hover:scale-95 text-center tracking-wider">
+                <li className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-primary  mt-4 text-center tracking-wider">
                   Sign Up
                 </li>
               </NavLink>

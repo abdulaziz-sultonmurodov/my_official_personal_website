@@ -2,30 +2,30 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
+// import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
 const AboutPage = () => {
-  const openAbout = () => {
-    const aboutList = document.getElementById("aboutList");
-    const arrowDownAbout = document.getElementById("arrowDownAbout");
-    const arrowUpAbout = document.getElementById("arrowUpAbout");
-    aboutList.style.display = "flex";
-    arrowDownAbout.style.display = "none";
-    arrowUpAbout.style.display = "flex";
-  };
-  const closeAbout = () => {
-    const arrowDownAbout = document.getElementById("arrowDownAbout");
-    const aboutList = document.getElementById("aboutList");
-    const arrowUpAbout = document.getElementById("arrowUpAbout");
-    aboutList.style.display = "none";
-    arrowDownAbout.style.display = "flex";
-    arrowUpAbout.style.display = "none";
-  };
+  // const openAbout = () => {
+  //   const aboutList = document.getElementById("aboutList");
+  //   const arrowDownAbout = document.getElementById("arrowDownAbout");
+  //   const arrowUpAbout = document.getElementById("arrowUpAbout");
+  //   aboutList.style.display = "flex";
+  //   arrowDownAbout.style.display = "none";
+  //   arrowUpAbout.style.display = "flex";
+  // };
+  // const closeAbout = () => {
+  //   const arrowDownAbout = document.getElementById("arrowDownAbout");
+  //   const aboutList = document.getElementById("aboutList");
+  //   const arrowUpAbout = document.getElementById("arrowUpAbout");
+  //   aboutList.style.display = "none";
+  //   arrowDownAbout.style.display = "flex";
+  //   arrowUpAbout.style.display = "none";
+  // };
   return (
     <>
       <Header />
       <Sidebar />
-      <nav style={{ paddingTop: "10vh" }}>
+      {/* <nav style={{ paddingTop: "10vh" }}>
         <div className="flex sm:hidden shadow-xl fixed w-full left-0 justify-end items-center bg-grey">
           <IoChevronDownSharp
             id="arrowDownAbout"
@@ -67,11 +67,11 @@ const AboutPage = () => {
             Interests
           </li>
         </ul>
-      </nav>
-      <main className="flex flex-col justify-center w-full px-6 sm:px-8 md:px-10 lg:px-0 lg:w-1/2 items-center mx-auto my-28">
+      </nav> */}
+      <main className="flex flex-col justify-center w-full px-6 sm:px-8 md:px-10 lg:px-0 lg:w-1/2 items-center mx-auto py-24">
         <div>
           <h1 className="text-4xl text-darkGrey text-center">Bio</h1>
-          <p className="text-grey text-xl mt-4">
+          <p className="text-gray-600 text-xl mt-4">
             My full name is Abdulaziz Sultonmurodov Akmalovich and I am 19. I
             was born and live in Tashkent. I am an easy-going and talkative
             person. I try to solve problems as fast as I can and help people if
@@ -84,7 +84,7 @@ const AboutPage = () => {
           <h1 className="text-4xl text-darkGrey text-center mt-20">
             Education
           </h1>
-          <p className="text-grey text-xl mt-4">
+          <p className="text-gray-600 text-xl mt-4">
             I finished studying international school named "Tashkent Ulugbek
             International School" (TUIS). I learned English in my school because
             all subjects were taught in English by foreign teachers. Then I
@@ -96,7 +96,7 @@ const AboutPage = () => {
         </div>
         <div>
           <h1 className="text-4xl text-darkGrey text-center mt-20">Work</h1>
-          <p className="text-grey text-xl mt-4">
+          <p className="text-gray-600 text-xl mt-4">
             I have been learning frontend development for 1.5 years and have
             much experience in this field. I also started to have interest in
             backend development and have been learning for 6 months but do not
@@ -108,7 +108,7 @@ const AboutPage = () => {
           <h1 className="text-4xl text-darkGrey text-center mt-20">
             Interests
           </h1>
-          <p className="text-grey text-xl mt-4">
+          <p className="text-gray-600 text-xl mt-4">
             In my spare time, I love learning new languages and know some basics
             in Spanish and Arabic. I really like playing football and tennis. I
             like reading books such as novels or stories and it helps me to

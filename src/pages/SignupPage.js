@@ -42,9 +42,12 @@ const SignupPage = () => {
           <form className="flex flex-col">
             <div className="flex flex-row items-center justify-center">
               <div className="bg-gray-200 border-r-2 border-gray-500 mt-4 py-3 px-4 flex items-center">
-                <FaUser className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-darkGrey cursor-pointer" />
+                <label htmlFor="name">
+                  <FaUser className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-primary cursor-pointer" />
+                </label>
               </div>
               <Input
+                id="name"
                 className="w-64 md:w-96 bg-gray-200 mt-4 py-1 lg:py-2 px-6 lg:px-4 lg:w-96 focus:outline-none "
                 placeholder="Your Name"
                 type="text"
@@ -52,9 +55,12 @@ const SignupPage = () => {
             </div>
             <div className="flex flex-row items-center justify-center">
               <div className="bg-gray-200 border-r-2 border-gray-500 mt-4 py-3 px-4 flex items-center">
-                <HiMail className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-darkGrey cursor-pointer" />
+                <label htmlFor="email">
+                  <HiMail className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-primary cursor-pointer" />
+                </label>
               </div>
               <Input
+                id="email"
                 className="w-64 md:w-96 border-none bg-gray-200 mt-4 px-6 lg:px-4 lg:w-96 focus:outline-none py-1 lg:py-2"
                 placeholder="Your Email"
                 type="email"
@@ -62,10 +68,13 @@ const SignupPage = () => {
             </div>
             <div className="flex flex-row items-center justify-center mx-8">
               <div className="bg-gray-200 border-r-2 border-gray-500 mt-4 py-4 lg:py-3 px-4 flex items-center">
-                <FaLock className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-darkGrey cursor-pointer" />
+                <label htmlFor="password">
+                  <FaLock className="w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-primary cursor-pointer" />
+                </label>
               </div>
 
               <Input
+                id="password"
                 className="w-64 md:w-96 border-none bg-gray-200 mt-4  px-4 lg:w-96 focus:outline-none lg:py-0"
                 type={values.showPassword ? "text" : "password"}
                 onChange={handlePasswordChange("password")}
@@ -76,13 +85,17 @@ const SignupPage = () => {
                     onClick={handleClickShowPassword}
                     onMouseDown={handleMouseDownPassword}
                   >
-                    {values.showPassword ? <Visibility /> : <VisibilityOff />}
+                    {values.showPassword ? (
+                      <Visibility className="hover:text-primary" />
+                    ) : (
+                      <VisibilityOff className="hover:text-primary" />
+                    )}
                   </IconButton>
                 }
               />
             </div>
             <input
-              className="bg-grey mt-8 outline-none uppercase cursor-pointer text-lg font-semibold tracking-wider text-white px-16 py-2 text-center hover:bg-darkGrey hover:text-white lg:w-1/2 mx-auto my-10 rounded-xl"
+              className="bg-grey mt-8 outline-none uppercase cursor-pointer text-lg font-semibold tracking-wider text-white px-16 py-2 text-center hover:bg-primary hover:text-white lg:w-1/2 mx-auto my-10 rounded-xl"
               value="Sign Up"
               type="submit"
             ></input>
@@ -97,7 +110,7 @@ const SignupPage = () => {
               To continue your courses with me please login
             </p>
             <Link to="/login">
-              <button className="cursor-pointer text-lg font-semibold tracking-wider text-white px-12 py-2 border-2 border-white hover:border-gray-800 outline-none text-center hover:bg-darkGrey hover:text-white my-10 rounded-xl uppercase focus:outline-none">
+              <button className="cursor-pointer text-lg font-semibold tracking-wider text-white px-12 py-2 border-2 border-white hover:border-primary outline-none text-center hover:bg-darkGrey hover:text-primary my-10 rounded-xl uppercase focus:outline-none">
                 Login
               </button>
             </Link>

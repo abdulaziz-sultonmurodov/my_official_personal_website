@@ -41,9 +41,9 @@ const PortfolioTwo = () => {
             <div className="flex w-full lg:w-3/5 flex-col">
               <div
                 onClick={() => {
-                  if (isOpen == true) {
+                  if (isOpen === true) {
                     setIsOpen(false);
-                  } else if (isOpen == false) {
+                  } else if (isOpen === false) {
                     setIsOpen(true);
                   } else {
                     setIsOpen(false);
@@ -119,6 +119,7 @@ const PortfolioTwo = () => {
                 <a
                   href="https://github.com/abdulaziz-sultonmurodov/My-original-portfolio.git"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <p className="flex items-center mt-6 cursor-pointer hover:text-darkGrey">
                     <IoLogoGithub className="w-6 h-6 mr-2" /> View Code
@@ -126,6 +127,7 @@ const PortfolioTwo = () => {
                 </a>
                 <a
                   href="https://abdulazizdeveloper.netlify.app/"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <p className="flex items-center mt-6 ml-0 sm:ml-10 cursor-pointer hover:text-darkGrey">

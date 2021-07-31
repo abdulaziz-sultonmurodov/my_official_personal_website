@@ -29,9 +29,9 @@ const EcommerceOne = () => {
             <div className="flex w-full lg:w-3/5 flex-col">
               <div
                 onClick={() => {
-                  if (isOpen == true) {
+                  if (isOpen === true) {
                     setIsOpen(false);
-                  } else if (isOpen == false) {
+                  } else if (isOpen === false) {
                     setIsOpen(true);
                   } else {
                     setIsOpen(false);
@@ -102,13 +102,18 @@ const EcommerceOne = () => {
               <div className="flex flex-col sm:flex-row">
                 <a
                   href="https://github.com/abdulaziz-sultonmurodov/clothesWebsite.git"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <p className="flex items-center mt-6 cursor-pointer hover:text-darkGrey">
                     <IoLogoGithub className="w-6 h-6 mr-2" /> View Code
                   </p>
                 </a>
-                <a href="https://clotheswebsite.netlify.app/" target="_blank">
+                <a
+                  href="https://clotheswebsite.netlify.app/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <p className="flex items-center mt-6 ml-0 sm:ml-10 cursor-pointer hover:text-darkGrey">
                     <ImLink className="w-6 h-6 mr-2" /> Visit Project
                   </p>
