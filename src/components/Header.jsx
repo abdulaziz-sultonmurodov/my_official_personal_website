@@ -6,6 +6,7 @@ import logo from "../images/logo.png"
 import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { HiMail } from "react-icons/hi";
+import {navColor, textColor} from "../utils/ColorChange";
 
 const Header = () => {
   const openNav = () => {
@@ -31,42 +32,40 @@ const Header = () => {
         <nav style={{ zIndex: "10" }} className="bg-white h-header flex flex-row justify-around items-center fixed w-full">
           <div  className="flex flex-row items-center">
             <NavLink to="/">
-              {/* <h1 className="milkshake text-4xl text-grey hover:text-primary">
-                AS
-              </h1> */}<div className="w-16 flex justify-center items-center">
+           <div className="w-16 flex justify-center items-center">
               <img className="w-full" src={logo} alt="logo" />
               </div>
             </NavLink>
           </div>
           <div  className="w-2/5">
             <ul  className="hidden lg:flex flex-row justify-between items-center">
-              <NavLink exact activeClassName="navbar-active" to="/">
-                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
+              <NavLink exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
+                <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Home
                 </li>
               </NavLink>
-              <NavLink activeClassName="navbar-active" to="/about">
-                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/about">
+                <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   About
                 </li>
               </NavLink>
-              <NavLink activeClassName="navbar-active" to="/portfolio">
-                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/portfolio">
+                <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Portfolio
                 </li>
               </NavLink>
-              {/* <NavLink activeClassName="navbar-active" to="/courses">
-                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
+              {/* <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/courses">
+                <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Courses
                 </li>
               </NavLink> */}
-              {/* <NavLink activeClassName="navbar-active" to="/blog">
-                <li className="cursor-pointer font-semibold text-grey hover:text-primary tracking-wider">
+              {/* <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/blog">
+                <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Blog
                 </li>
               </NavLink> */}
-              <NavLink activeClassName="navbar-active" to="/contact">
-                <li className="cursor-pointer font-semibold text-grey hover:text-primary">
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
+                <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor}`}>
                   Contact
                 </li>
               </NavLink>
@@ -76,12 +75,12 @@ const Header = () => {
           <div>
             <ul className="hidden lg:flex flex-row items-center">
               <NavLink to="login">
-                <li className="mr-5 rounded-lg cursor-pointer font-semibold tracking-wider text-darkGrey hover:text-primary block px-4 py-2 text-base border-2 border-darkGrey hover:border-primary text-center">
+                <li className={`mr-5 rounded-lg cursor-pointer font-semibold tracking-wider text-darkGrey  hover:text-${textColor} block px-4 py-2 text-base border-2 border-darkGrey hover:border-${textColor} text-center`}>
                   Login
                 </li>
               </NavLink>
               <NavLink to="signup">
-                <li className="cursor-pointer font-semibold text-white block py-2 px-4 text-base bg-darkGrey hover:bg-primary rounded-lg border-2 border-darkGrey text-center tracking-wider">
+                <li className={`cursor-pointer font-semibold text-white block py-2 px-4 text-base bg-darkGrey hover:bg-${textColor} rounded-lg border-2 border-darkGrey text-center tracking-wider`}>
                   Signup
                 </li>
               </NavLink>
@@ -89,12 +88,12 @@ const Header = () => {
             <div
               id="burger"
               onClick={openNav}
-              className="flex lg:hidden w-6 h-6 mr-4"
+              className="flex lg:hidden w-6 h-6 mr-4 transition-all"
             >
-              <GiHamburgerMenu className="w-6 h-6 text-grey hover:text-primary cursor-pointer" />
+              <GiHamburgerMenu className={`w-6 h-6 text-grey hover:text-${textColor} cursor-pointer`} />
             </div>
             <div id="cancel" onClick={closeNav} className="hidden w-6 h-6 mr-6">
-              <AiOutlineClose className="w-6 h-6 text-grey hover:text-primary cursor-pointer" />
+              <AiOutlineClose className={`w-6 h-6 text-grey hover:text-${textColor} cursor-pointer`} />
             </div>
           </div>
         </nav>
@@ -102,49 +101,49 @@ const Header = () => {
 
         <div
           id="burgerList"
-          className="hidden"
+          className="hidden  transition ease-out duration-500"
         >
-          <ul style={{ zIndex: "10" }} className="px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-full fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
+          <ul style={{ zIndex: "10" }} className=" px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-full fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
             <div>
               <li className="my-2">
-            <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} exact activeStyle={{color: "#ff6700"}} to="/">
+            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
                 Home
             </NavLink>
               </li>
               <li className="my-2">
-            <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/about">
+            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/about">
                 About
             </NavLink>
               </li>
               <li className="my-2">
-            <NavLink className="text-grey hover:text-primary  rounded-md text-base font-semibold tracking-wider" onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/portfolio">
+            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/portfolio">
                 Portfolio
             </NavLink>
               </li>
-            {/* <NavLink onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/courses">
-              <li className="text-grey hover:text-primary block  rounded-md text-base font-semibold tracking-wider">
+            {/* <NavLink onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/courses">
+              <li className="text-grey hover:text-${textColor} block  rounded-md text-base font-semibold tracking-wider">
                 Courses
               </li>
             </NavLink> */}
-            {/* <NavLink onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/blog">
-              <li className="text-grey hover:text-primary block  rounded-md text-base font-semibold tracking-wider">
+            {/* <NavLink onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/blog">
+              <li className="text-grey hover:text-${textColor} block  rounded-md text-base font-semibold tracking-wider">
                 Blog
               </li>
             </NavLink> */}
               <li className="my-2">
-            <NavLink className="text-grey hover:text-primary rounded-md text-base font-semibold tracking-wider" onClick={closeNav} activeStyle={{color: "#ff6700"}} to="/contact">
+            <NavLink className={`text-grey hover:text-${textColor} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
                 Contact
             </NavLink>
               </li>
             <div>
           
                 <li>
-              <NavLink className="text-darkGrey hover:text-primary block w-48 mx-auto py-2  text-base font-semibold border-2 rounded-lg border-darkGrey hover:border-primary mt-4 text-center tracking-wider" onClick={closeNav} to="/login">
+              <NavLink className={`text-darkGrey hover:text-${textColor} block w-48 mx-auto py-2  text-base font-semibold border-2 rounded-lg border-darkGrey hover:border-${textColor} mt-4 text-center tracking-wider`} onClick={closeNav} to="/login">
                   Login
               </NavLink>
                 </li>
                 <li>
-              <NavLink className="text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-primary rounded-lg mt-4 text-center tracking-wider" onClick={closeNav} to="/signup">
+              <NavLink className={`text-white block py-2 w-48 mx-auto text-base font-semibold bg-darkGrey hover:bg-${textColor} rounded-lg mt-4 text-center tracking-wider`} onClick={closeNav} to="/signup">
                   Sign Up
               </NavLink>
                 </li>
@@ -154,28 +153,28 @@ const Header = () => {
               <div>
               <div className="flex flex-row justify-center items-center">
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
-                    <FaTelegramPlane className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <FaTelegramPlane className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
-                    <IoLogoInstagram className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <IoLogoInstagram className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://facebook.com/abdulaziz.sultonmurodov.a">
-                    <IoLogoFacebook className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <IoLogoFacebook className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://twitter.com/abdulaziz__s_a">
-                    <IoLogoTwitter className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <IoLogoTwitter className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="mailto:abdulazizsultonmurodov.dev@gmail.com">
-                    <HiMail className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <HiMail className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
-                    <IoLogoGithub className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <IoLogoGithub className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
-                    <IoLogoYoutube className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <IoLogoYoutube className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                     <a className="mx-2 sm:mx-3" target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
-                    <FaLinkedin className="h-5 w-5 cursor-pointer text-grey hover:text-primary hover:text-darkGrey" />
+                    <FaLinkedin className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor} hover:text-darkGrey`} />
                     </a>
                 </div>   
                 <div className="text-center mb-8 mt-4">

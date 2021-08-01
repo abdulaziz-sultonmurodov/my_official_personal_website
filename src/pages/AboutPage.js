@@ -5,9 +5,20 @@ import { MdWork } from "react-icons/md";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import { textColor } from "../utils/ColorChange";
 // import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
 const AboutPage = () => {
+  let date = new Date();
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+
+  let birth = new Date("12/22/2001");
+  let month_diff = Date.now() - birth.getTime();
+  let age_dt = new Date(month_diff);
+  let birthYear = age_dt.getUTCFullYear();
+  let age = Math.abs(birthYear - 1970);
+
   // const openAbout = () => {
   //   const aboutList = document.getElementById("aboutList");
   //   const arrowDownAbout = document.getElementById("arrowDownAbout");
@@ -74,10 +85,13 @@ const AboutPage = () => {
       <main className="flex flex-col justify-center w-full px-6 sm:px-8 md:px-10 lg:px-0 lg:w-1/2 items-center mx-auto py-24">
         <div>
           <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey">
-            <IoPerson className="mr-2 hover:text-primary cursor-pointer" /> Bio
+            <IoPerson
+              className={`mr-2 hover:text-${textColor} cursor-pointer`}
+            />{" "}
+            Bio
           </h1>
           <p className="text-gray-600 text-xl mt-4">
-            My full name is Abdulaziz Sultonmurodov Akmalovich and I am 19. I
+            My full name is Abdulaziz Sultonmurodov Akmalovich and I am {age}. I
             was born and live in Tashkent. I am an easy-going and talkative
             person. I try to solve problems as fast as I can and help people if
             I have opportunity to help them. I like to finish all the work I
@@ -87,7 +101,9 @@ const AboutPage = () => {
         </div>
         <div>
           <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey text-center mt-20">
-            <IoIosSchool className="mr-2 hover:text-primary cursor-pointer" />{" "}
+            <IoIosSchool
+              className={`mr-2 hover:text-${textColor} cursor-pointer`}
+            />{" "}
             Education
           </h1>
           <p className="text-gray-600 text-xl mt-4">
@@ -102,19 +118,32 @@ const AboutPage = () => {
         </div>
         <div>
           <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey text-center mt-20">
-            <MdWork className="mr-2 hover:text-primary cursor-pointer" /> Work
+            <MdWork className={`mr-2 hover:text-${textColor} cursor-pointer`} />{" "}
+            Work
           </h1>
           <p className="text-gray-600 text-xl mt-4">
-            I have been learning frontend development for 1.5 years and have
-            much experience in this field. I also started to have interest in
+            I have been learning frontend development for {year - 2020}{" "}
+            {year - 2020 < 2 ? "year" : "years"} and{" "}
+            <span className={month === 12 ? "hidden" : "inline"}>
+              {month} {month === 1 ? "month" : "months"} and
+            </span>{" "}
+            have{" "}
+            <span className={year - 2021 === 0 ? "hidden" : "inline"}>
+              {year - 2021} {year - 2021 < 2 ? "year" : "years"}{" "}
+            </span>{" "}
+            <span className={month === 12 ? "hidden" : "inline"}>
+              {month} {month === 1 ? "month" : "months"}
+            </span>{" "}
+            real experience in this field. I also started to have interest in
             backend development and have been learning for 6 months but do not
-            have much experience. I have worked in an IT company for 1 month and
-            have experience on working with team.
+            have much experience.
           </p>
         </div>
         <div>
           <h1 className="flex flex-row items-center justify-center text-2xl sm:text-3xl text-darkGrey text-center mt-20">
-            <IoFootball className="mr-2 hover:text-primary cursor-pointer" />{" "}
+            <IoFootball
+              className={`mr-2 hover:text-${textColor} cursor-pointer`}
+            />{" "}
             Interests / Hobbies
           </h1>
           <p className="text-gray-600 text-xl mt-4">

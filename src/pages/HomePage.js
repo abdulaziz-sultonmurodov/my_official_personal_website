@@ -5,8 +5,12 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { IoChevronForward } from "react-icons/io5";
 import HomePageCover from "../images/homepage.svg";
+import { textColor } from "../utils/ColorChange";
 
 const HomePage = () => {
+  let date = new Date();
+  let hours = date.getHours();
+
   return (
     <>
       <Header />
@@ -19,40 +23,56 @@ const HomePage = () => {
         />
       </div>
       <main className="h-full mb-24 sm:mb-0 sm:h-sidebar flex flex-col items-center justify-start sm:justify-center">
-        <h1 className="text-md sm:text-2xl lg:text-3xl text-grey">
-          Hello my friends, my name is Abdulaziz
+        <h1 className="text-md sm:text-xl lg:text-2xl text-grey mb-2">
+          {hours < 5
+            ? "Good Evening"
+            : hours < 12
+            ? "Good Morning"
+            : hours < 18
+            ? "Good Afternoon"
+            : hours >= 18
+            ? "Good Evening"
+            : "Hello"}{" "}
+          my friend!
+        </h1>
+        <h1 className="text-lg sm:text-2xl tracking-wider lg:text-3xl text-darkGrey">
+          My name is Abdulaziz
         </h1>
         <h1 className="text-grey text-2xl sm:text-4xl md:text-5xl lg:text-6xl my-2 sm:my-6">
-          <span className="hover:text-primary cursor-pointer">T</span>
-          <span className="hover:text-primary cursor-pointer">h</span>
-          <span className="hover:text-primary cursor-pointer">e</span>{" "}
-          <span className="hover:text-primary cursor-pointer">F</span>
-          <span className="hover:text-primary cursor-pointer">r</span>
-          <span className="hover:text-primary cursor-pointer">o</span>
-          <span className="hover:text-primary cursor-pointer">n</span>
-          <span className="hover:text-primary cursor-pointer">t</span>
-          <span className="hover:text-primary cursor-pointer">e</span>
-          <span className="hover:text-primary cursor-pointer">n</span>
-          <span className="hover:text-primary cursor-pointer">d</span>{" "}
-          <span className="hover:text-primary cursor-pointer">E</span>
-          <span className="hover:text-primary cursor-pointer">n</span>
-          <span className="hover:text-primary cursor-pointer">g</span>
-          <span className="hover:text-primary cursor-pointer">i</span>
-          <span className="hover:text-primary cursor-pointer">n</span>
-          <span className="hover:text-primary cursor-pointer">e</span>
-          <span className="hover:text-primary cursor-pointer">e</span>
-          <span className="hover:text-primary cursor-pointer">r</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>T</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>h</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>
+            e
+          </span>{" "}
+          <span className={`hover:text-${textColor} cursor-pointer`}>F</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>r</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>o</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>n</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>t</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>e</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>n</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>
+            d
+          </span>{" "}
+          <span className={`hover:text-${textColor} cursor-pointer`}>E</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>n</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>g</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>i</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>n</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>e</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>e</span>
+          <span className={`hover:text-${textColor} cursor-pointer`}>r</span>
         </h1>
         <div className="flex mt-6 sm:mt-0 flex-col sm:flex-row justify-center sm:items-center">
           <Link
-            className="focus:outline-none cursor-pointer text-lg font-bold text-darkGrey hover:text-white py-4 px-8 text-center flex rounded-lg items-center border-2 border-darkGrey hover:bg-primary"
+            className={`focus:outline-none cursor-pointer text-lg font-bold text-darkGrey hover:text-white py-4 px-8 text-center flex rounded-lg items-center border-2 border-darkGrey hover:bg-${textColor}`}
             to="/contact"
           >
             I need a website
             <IoChevronForward className="w-5 h-5" />
           </Link>
           <Link
-            className="focus:outline-none cursor-pointer text-lg font-bold text-darkGrey  px-8 py-4 border-2 border-darkGrey hover:text-white hover:bg-primary  rounded-lg text-center sm:ml-4 flex items-center mt-4 sm:mt-0"
+            className={`focus:outline-none cursor-pointer text-lg font-bold text-darkGrey  px-8 py-4 border-2 border-darkGrey hover:text-white hover:bg-${textColor}  rounded-lg text-center sm:ml-4 flex items-center mt-4 sm:mt-0`}
             to="/contact"
           >
             I'm looking to hire
