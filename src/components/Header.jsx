@@ -39,32 +39,32 @@ const Header = () => {
           </div>
           <div  className="w-2/5">
             <ul  className="hidden lg:flex flex-row justify-between items-center">
-              <NavLink exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
+              <NavLink exact activeStyle={{color: `${navColor}`}} to="/">
                 <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Home
                 </li>
               </NavLink>
-              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/about">
+              <NavLink activeStyle={{color: `${navColor}`}} to="/about">
                 <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   About
                 </li>
               </NavLink>
-              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/portfolio">
+              <NavLink activeStyle={{color: `${navColor}`}} to="/portfolio">
                 <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Portfolio
                 </li>
               </NavLink>
-              {/* <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/courses">
+              {/* <NavLink activeStyle={{color: `${navColor}`}} to="/courses">
                 <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Courses
                 </li>
               </NavLink> */}
-              {/* <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/blog">
+              {/* <NavLink activeStyle={{color: `${navColor}`}} to="/blog">
                 <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor} tracking-wider`}>
                   Blog
                 </li>
               </NavLink> */}
-              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
+              <NavLink activeStyle={{color: `${navColor}`}} to="/contact">
                 <li className={`cursor-pointer font-semibold text-grey hover:text-${textColor}`}>
                   Contact
                 </li>
@@ -106,32 +106,32 @@ const Header = () => {
           <ul style={{ zIndex: "10" }} className=" px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-full fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
             <div>
               <li className="my-2">
-            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
+            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} exact activeStyle={{color: `${navColor}`}} to="/">
                 Home
             </NavLink>
               </li>
               <li className="my-2">
-            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/about">
+            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/about">
                 About
             </NavLink>
               </li>
               <li className="my-2">
-            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/portfolio">
+            <NavLink className={`text-grey hover:text-${textColor}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/portfolio">
                 Portfolio
             </NavLink>
               </li>
-            {/* <NavLink onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/courses">
+            {/* <NavLink onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/courses">
               <li className="text-grey hover:text-${textColor} block  rounded-md text-base font-semibold tracking-wider">
                 Courses
               </li>
             </NavLink> */}
-            {/* <NavLink onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/blog">
+            {/* <NavLink onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/blog">
               <li className="text-grey hover:text-${textColor} block  rounded-md text-base font-semibold tracking-wider">
                 Blog
               </li>
             </NavLink> */}
               <li className="my-2">
-            <NavLink className={`text-grey hover:text-${textColor} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
+            <NavLink className={`text-grey hover:text-${textColor} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/contact">
                 Contact
             </NavLink>
               </li>
