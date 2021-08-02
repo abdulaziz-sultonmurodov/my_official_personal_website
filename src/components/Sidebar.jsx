@@ -7,7 +7,7 @@ import { IoLogoFacebook } from "react-icons/io"
 import { IoLogoTwitter } from "react-icons/io" 
 import { IoLogoYoutube } from "react-icons/io" 
 import { HiMail } from "react-icons/hi"
-import {textColor} from '../utils/ColorChange'
+import {textColorHover} from '../utils/ColorChange'
 
 
 const Sidebar = () => {
@@ -23,28 +23,28 @@ const Sidebar = () => {
             <aside style={{zIndex: "0"}}  className="bg-white w-10 h-sidebar hidden lg:flex justify-center items-center fixed">
                 <div id="sidebar" className="flex flex-col justify-evenly items-center h-1/2">
                     <a target="_blank" rel="noreferrer" href="https://t.me/abdulaziz_sultonmurodov_channel">
-                    <FaTelegramPlane className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <FaTelegramPlane className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://instagram.com/abdulaziz_sultonmurodov">
-                    <IoLogoInstagram className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <IoLogoInstagram className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://facebook.com/abdulaziz.sultonmurodov.a">
-                    <IoLogoFacebook className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <IoLogoFacebook className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://twitter.com/abdulaziz__s_a">
-                    <IoLogoTwitter className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <IoLogoTwitter className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="mailto:abdulazizsultonmurodov.dev@gmail.com">
-                    <HiMail className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <HiMail className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://github.com/abdulaziz-sultonmurodov">
-                    <IoLogoGithub className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <IoLogoGithub className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCvxU7y9hQcdvXPcub6F5EPQ">
-                    <IoLogoYoutube className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <IoLogoYoutube className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/abdulaziz-sultonmurodov">
-                    <FaLinkedin className={`h-5 w-5 cursor-pointer text-grey hover:text-${textColor}`} />
+                    <FaLinkedin className={`h-5 w-5 cursor-pointer text-grey ${textColorHover}`} />
                     </a>
                 </div>   
             </aside> 

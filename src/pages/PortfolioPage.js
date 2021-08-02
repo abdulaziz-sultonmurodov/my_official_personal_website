@@ -97,7 +97,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-primary text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   AS (New Version)
                 </p>
               </Link>
@@ -115,7 +115,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   AS (Old Version)
                 </p>
               </Link>
@@ -133,7 +133,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   DarkBio
                 </p>
               </Link>
@@ -151,7 +151,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   Pretty
                 </p>
               </Link>
@@ -176,7 +176,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   Knowledge
                 </p>
               </Link>
@@ -201,7 +201,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                   />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   Clothes
                 </p>
               </Link>
@@ -226,7 +226,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                     />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   Calculator
                 </p>
               </Link>
@@ -244,7 +244,7 @@ const PortfolioPage = () => {
                     alt="Portfolio"
                     />
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2 hover:text-darkGrey text-center">
+                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
                   Color Generator
                 </p>
               </Link>

@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { IoLocationSharp } from "react-icons/io5";
 import { RiMailSendLine } from "react-icons/ri";
-import { textColor } from "../utils/ColorChange";
+import { bgColorHover, textColor, textColorHover } from "../utils/ColorChange";
 
 const ContactPage = () => {
   return (
@@ -16,7 +16,7 @@ const ContactPage = () => {
         <div className="text-lightGrey tracking-wider leading-9 text-sm sm:text-2xl break-all px-4">
           <span className="text-lightGrey">if</span> (
           <a
-            className={`text-${textColor} cursor-pointer hover:underline`}
+            className={`${textColor} cursor-pointer hover:underline`}
             target="_blank"
             rel="noreferrer"
             href="https://t.me/abdulaziz_sultonmurodov_channel"
@@ -26,7 +26,7 @@ const ContactPage = () => {
           ) {"{"}
           <br />
           <a
-            className={`ml-4 text-darkGrey font-bold cursor-pointer hover:text-${textColor}`}
+            className={`ml-4 text-darkGrey font-bold cursor-pointer ${textColorHover}`}
             target="_blank"
             rel="noreferrer"
             href="https://t.me/abdulaziz_sultonmurodov_channel"
@@ -36,7 +36,7 @@ const ContactPage = () => {
           <br />
           {"};"} <span className="text-lightGrey">else if</span>(
           <a
-            className={`text-${textColor} cursor-pointer hover:underline`}
+            className={`${textColor} cursor-pointer hover:underline`}
             target="_blank"
             rel="noreferrer"
             href="https://instagram.com/abdulaziz_sultonmurodov"
@@ -46,7 +46,7 @@ const ContactPage = () => {
           ) {"{"}
           <br />
           <a
-            className={`ml-4 text-darkGrey font-bold cursor-pointer hover:text-${textColor}`}
+            className={`ml-4 text-darkGrey font-bold cursor-pointer ${textColorHover}`}
             target="_blank"
             rel="noreferrer"
             href="https://instagram.com/abdulaziz_sultonmurodov"
@@ -56,7 +56,7 @@ const ContactPage = () => {
           <br />
           {"};"} <span className="text-lightGrey">else if</span> (
           <a
-            className={`text-${textColor} cursor-pointer hover:underline`}
+            className={`${textColor} cursor-pointer hover:underline`}
             href="mailto: abdulazizsultonmurodov.dev@gmail.com"
           >
             Email
@@ -64,7 +64,7 @@ const ContactPage = () => {
           ) {"{"}
           <br />
           <a
-            className={`ml-4 text-darkGrey font-bold cursor-pointer hover:text-${textColor}`}
+            className={`ml-4 text-darkGrey font-bold cursor-pointer ${textColorHover}`}
             href="mailto: abdulazizsultonmurodov.dev@gmail.com"
           >
             abdulazizsultonmurodov.dev@gmail.com
@@ -74,7 +74,7 @@ const ContactPage = () => {
           <br />
           <a
             href="#form"
-            className={`ml-4 text-darkGrey font-bold cursor-pointer hover:text-${textColor}`}
+            className={`ml-4 text-darkGrey font-bold cursor-pointer ${textColorHover}`}
           >
             Submit the form below
           </a>
@@ -89,7 +89,7 @@ const ContactPage = () => {
             </h1>
             <p className="mt-3 tracking-wider text-center text-xs md:text-md flex items-center justify-center text-grey">
               <IoLocationSharp
-                className={`mr-2 w-5 h-5 text-darkGrey hover:text-${textColor} cursor-pointer`}
+                className={`mr-2 w-5 h-5 text-darkGrey ${textColorHover} cursor-pointer`}
               />
               Uchtepa Region, Tashkent City, Uzbekistan
             </p>
@@ -97,7 +97,7 @@ const ContactPage = () => {
           <div className="flex flex-row justify-between mt-10 items-center">
             <div className="hidden lg:flex">
               <RiMailSendLine
-                className={`w-80 h-80 text-grey hover:text-${textColor} cursor-pointer`}
+                className={`w-80 h-80 text-grey ${textColorHover} cursor-pointer`}
               />
             </div>
 
@@ -130,7 +130,7 @@ const ContactPage = () => {
               ></textarea>
               <input
                 type="submit"
-                className={`mt-4 rounded-2xl bg-darkGrey text-white py-2 w-1/2 mx-auto hover:bg-${textColor} cursor-pointer`}
+                className={`mt-4 rounded-2xl bg-darkGrey text-white py-2 w-1/2 mx-auto ${bgColorHover} cursor-pointer`}
                 value="Submit"
                 name="submit"
               />

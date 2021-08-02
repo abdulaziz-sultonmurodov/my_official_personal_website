@@ -7,7 +7,11 @@ import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Input from "@material-ui/core/Input";
 import logo from "../images/logo.png";
-import { textColor } from "../utils/ColorChange";
+import {
+  bgColorHover,
+  borderColorHover,
+  textColorHover,
+} from "../utils/ColorChange";
 
 const SignupPage = () => {
   const [values, setValues] = React.useState({
@@ -45,7 +49,7 @@ const SignupPage = () => {
               <div className="bg-gray-200 border-r-2 border-gray-500 mt-4 py-3 px-4 flex items-center">
                 <label htmlFor="name">
                   <FaUser
-                    className={`w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-${textColor} cursor-pointer`}
+                    className={`w-4 h-4 lg:w-6 lg:h-6 text-grey ${textColorHover} cursor-pointer`}
                   />
                 </label>
               </div>
@@ -60,7 +64,7 @@ const SignupPage = () => {
               <div className="bg-gray-200 border-r-2 border-gray-500 mt-4 py-3 px-4 flex items-center">
                 <label htmlFor="email">
                   <HiMail
-                    className={`w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-${textColor} cursor-pointer`}
+                    className={`w-4 h-4 lg:w-6 lg:h-6 text-grey ${textColorHover} cursor-pointer`}
                   />
                 </label>
               </div>
@@ -75,7 +79,7 @@ const SignupPage = () => {
               <div className="bg-gray-200 border-r-2 border-gray-500 mt-4 py-4 lg:py-3 px-4 flex items-center">
                 <label htmlFor="password">
                   <FaLock
-                    className={`w-4 h-4 lg:w-6 lg:h-6 text-grey hover:text-${textColor} cursor-pointer`}
+                    className={`w-4 h-4 lg:w-6 lg:h-6 text-grey ${textColorHover} cursor-pointer`}
                   />
                 </label>
               </div>
@@ -93,16 +97,16 @@ const SignupPage = () => {
                     onMouseDown={handleMouseDownPassword}
                   >
                     {values.showPassword ? (
-                      <Visibility className={`hover:text-${textColor}`} />
+                      <Visibility className={`${textColorHover}`} />
                     ) : (
-                      <VisibilityOff className={`hover:text-${textColor}`} />
+                      <VisibilityOff className={`${textColorHover}`} />
                     )}
                   </IconButton>
                 }
               />
             </div>
             <input
-              className={`bg-grey mt-8 outline-none uppercase cursor-pointer text-lg font-semibold tracking-wider text-white px-16 py-2 text-center hover:bg-${textColor} hover:text-white lg:w-1/2 mx-auto my-10 rounded-xl`}
+              className={`bg-grey mt-8 outline-none uppercase cursor-pointer text-lg font-semibold tracking-wider text-white px-16 py-2 text-center ${bgColorHover} hover:text-white lg:w-1/2 mx-auto my-10 rounded-xl`}
               value="Sign Up"
               type="submit"
             ></input>
@@ -118,7 +122,7 @@ const SignupPage = () => {
             </p>
             <Link to="/login">
               <button
-                className={`cursor-pointer text-lg font-semibold tracking-wider text-white px-12 py-2 border-2 border-white hover:border-${textColor} outline-none text-center hover:bg-darkGrey hover:text-${textColor} my-10 rounded-xl uppercase focus:outline-none`}
+                className={`cursor-pointer text-lg font-semibold tracking-wider text-white px-12 py-2 border-2 border-white ${borderColorHover} outline-none text-center hover:bg-darkGrey ${textColorHover} my-10 rounded-xl uppercase focus:outline-none`}
               >
                 Login
               </button>
