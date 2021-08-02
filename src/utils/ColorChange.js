@@ -85,3 +85,20 @@ export const navColor =
     : days === 6
     ? "#20a4f3"
     : "#ff6700";
+
+export const imageTextHover =
+  days === 0
+    ? "primary-image-text-hover"
+    : days === 1
+    ? "secondary-image-text-hover"
+    : days === 2
+    ? "third-image-text-hover"
+    : days === 3
+    ? "fourth-image-text-hover"
+    : days === 4
+    ? "fifth-image-text-hover"
+    : days === 5
+    ? "sixth-image-text-hover"
+    : days === 6
+    ? "seventh-image-text-hover"
+    : "primary-image-text-hover";

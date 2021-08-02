@@ -9,6 +9,7 @@ import portfolioFour from "../images/personal/four/home.png";
 import educationOne from "../images/education/one/home.png";
 import ecommerceOne from "../images/ecommerce/one/home.png";
 import { Link } from "react-router-dom";
+import { imageTextHover } from "../utils/ColorChange";
 // import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
 const PortfolioPage = () => {
@@ -89,7 +90,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-websites-1" className="workContainer">
+              <Link to="personal-websites-1" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -107,7 +108,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-websites-2" className="workContainer">
+              <Link to="personal-websites-2" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -125,7 +126,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-websites-3" className="workContainer">
+              <Link to="personal-websites-3" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -143,7 +144,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="personal-websites-4" className="workContainer">
+              <Link to="personal-websites-4" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -168,7 +169,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="education-websites-1" className="workContainer">
+              <Link to="education-websites-1" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -193,7 +194,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="ecommerce-websites-1" className="workContainer">
+              <Link to="ecommerce-websites-1" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -218,7 +219,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="web-applications-1" className="workContainer">
+              <Link to="web-applications-1" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
@@ -236,7 +237,7 @@ const PortfolioPage = () => {
               style={{ zIndex: "1" }}
               className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
             >
-              <Link to="web-applications-2" className="workContainer">
+              <Link to="web-applications-2" className={`${imageTextHover}`}>
                 <div className=" w-full">
                   <img
                     className="object-contain rounded-lg imageDark w-96"
