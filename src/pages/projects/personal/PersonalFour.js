@@ -12,6 +12,7 @@ import team from "../../../images/personal/four/team.png";
 import skills from "../../../images/personal/four/skills.png";
 import contactImg from "../../../images/personal/four/contact.png";
 import footer from "../../../images/personal/four/footer.png";
+import GoBack from "../../../components/GoBack";
 
 const PortfolioFour = () => {
   const images = [
@@ -39,6 +40,7 @@ const PortfolioFour = () => {
         <div className="flex">
           <div className=" flex flex-col lg:flex-row justify-center">
             <div className="flex w-full lg:w-3/5 flex-col">
+              <GoBack />
               <div
                 onClick={() => {
                   if (isOpen === true) {

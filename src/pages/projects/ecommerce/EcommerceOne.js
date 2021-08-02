@@ -8,6 +8,7 @@ import { ImLink } from "react-icons/im";
 import homeImg from "../../../images/ecommerce/one/home.png";
 import productsImg from "../../../images/ecommerce/one/products.png";
 import contactImg from "../../../images/ecommerce/one/contact.png";
+import GoBack from "../../../components/GoBack";
 
 const EcommerceOne = () => {
   const images = [homeImg, productsImg, contactImg];
@@ -27,6 +28,7 @@ const EcommerceOne = () => {
         <div className="flex">
           <div className=" flex flex-col lg:flex-row justify-center">
             <div className="flex w-full lg:w-3/5 flex-col">
+              <GoBack />
               <div
                 onClick={() => {
                   if (isOpen === true) {

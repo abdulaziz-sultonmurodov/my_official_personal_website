@@ -7,6 +7,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { ImLink } from "react-icons/im";
 import homeImg from "../../../images/education/N14/homeImg.png";
 import signupImg from "../../../images/education/N14/signupImg.png";
+import GoBack from "../../../components/GoBack";
 
 const N14 = () => {
   const images = [homeImg, signupImg];
@@ -26,6 +27,7 @@ const N14 = () => {
         <div className="flex">
           <div className=" flex flex-col lg:flex-row justify-center">
             <div className="flex w-full lg:w-3/5 flex-col">
+              <GoBack />
               <div
                 onClick={() => {
                   if (isOpen === true) {

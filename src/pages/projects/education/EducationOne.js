@@ -8,6 +8,7 @@ import { ImLink } from "react-icons/im";
 import homeImg from "../../../images/education/one/home.png";
 import aboutImg from "../../../images/education/one/about.png";
 import footerImg from "../../../images/education/one/footer.png";
+import GoBack from "../../../components/GoBack";
 
 const EducationOne = () => {
   const images = [homeImg, aboutImg, footerImg];
@@ -27,6 +28,7 @@ const EducationOne = () => {
         <div className="flex">
           <div className=" flex flex-col lg:flex-row justify-center">
             <div className="flex w-full lg:w-3/5 flex-col">
+              <GoBack />
               <div
                 onClick={() => {
                   if (isOpen === true) {

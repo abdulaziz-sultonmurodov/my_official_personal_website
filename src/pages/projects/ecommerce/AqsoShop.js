@@ -10,6 +10,7 @@ import cartPage from "../../../images/ecommerce/AQSO-shop/cartPage.png";
 import dashboard from "../../../images/ecommerce/AQSO-shop/dashboard.png";
 import authorsImg from "../../../images/ecommerce/AQSO-shop/authorsImg.png";
 import publisherImg from "../../../images/ecommerce/AQSO-shop/publisherImg.png";
+import GoBack from "../../../components/GoBack";
 
 const AqsoShop = () => {
   const images = [homeImg, cartPage, dashboard, authorsImg, publisherImg];
@@ -18,6 +19,7 @@ const AqsoShop = () => {
   return (
     <>
       <Header />
+
       <main className="px-10 pt-24 flex flex-col lg:flex-row mb-10 items-center justify-evenly">
         <ImageSlides
           index={0}
@@ -29,6 +31,7 @@ const AqsoShop = () => {
         <div className="flex">
           <div className=" flex flex-col lg:flex-row justify-center">
             <div className="flex w-full lg:w-3/5 flex-col">
+              <GoBack />
               <div
                 onClick={() => {
                   if (isOpen === true) {

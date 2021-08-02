@@ -9,6 +9,7 @@ import homeImg from "../../../images/personal/three/home.png";
 import aboutImg from "../../../images/personal/three/about.png";
 import contactImg from "../../../images/personal/three/contact.png";
 import projectImg from "../../../images/personal/three/projects.png";
+import GoBack from "../../../components/GoBack";
 
 const PortfolioThree = () => {
   const images = [homeImg, aboutImg, projectImg, contactImg];
@@ -28,6 +29,7 @@ const PortfolioThree = () => {
         <div className="flex">
           <div className=" flex flex-col lg:flex-row justify-center">
             <div className="flex w-full lg:w-3/5 flex-col">
+              <GoBack />
               <div
                 onClick={() => {
                   if (isOpen === true) {
