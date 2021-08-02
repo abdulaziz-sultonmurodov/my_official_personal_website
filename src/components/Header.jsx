@@ -6,7 +6,7 @@ import logo from "../images/logo.png"
 import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { HiMail } from "react-icons/hi";
-import {bgColorHover, borderColorHover, navColor, textColor, textColorHover} from "../utils/ColorChange";
+import {bgColorHover, borderColorHover, navColor,  textColorHover} from "../utils/ColorChange";
 
 const Header = () => {
   const openNav = () => {
@@ -39,32 +39,32 @@ const Header = () => {
           </div>
           <div  className="w-2/5">
             <ul  className="hidden lg:flex flex-row justify-between items-center">
-              <NavLink exact activeStyle={{color: `${navColor}`}} to="/">
+              <NavLink exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
                   Home
                 </li>
               </NavLink>
-              <NavLink activeStyle={{color: `${navColor}`}} to="/about">
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/about">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
                   About
                 </li>
               </NavLink>
-              <NavLink activeStyle={{color: `${navColor}`}} to="/portfolio">
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/portfolio">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
                   Portfolio
                 </li>
               </NavLink>
-              {/* <NavLink activeStyle={{color: `${navColor}`}} to="/courses">
+              {/* <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/courses">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
                   Courses
                 </li>
               </NavLink> */}
-              {/* <NavLink activeStyle={{color: `${navColor}`}} to="/blog">
+              {/* <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/blog">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
                   Blog
                 </li>
               </NavLink> */}
-              <NavLink activeStyle={{color: `${navColor}`}} to="/contact">
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover}`}>
                   Contact
                 </li>
