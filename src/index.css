@@ -61,3 +61,25 @@ body {
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 } */
+
+.primary:hover {
+  color: #ff6700;
+}
+.secondary:hover {
+  color: #ed217c;
+}
+.thiird:hover {
+  color: #09bc8a;
+}
+.fourth:hover {
+  color: #054a91;
+}
+.fifth:hover {
+  color: #a1674a;
+}
+.sixth:hover {
+  color: #ff6978;
+}
+.seventh:hover {
+  color: #20a4f3;
+}
