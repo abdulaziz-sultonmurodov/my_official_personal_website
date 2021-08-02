@@ -9,10 +9,11 @@ import portfolioFour from "../images/personal/four/home.png";
 import educationOne from "../images/education/one/home.png";
 import ecommerceOne from "../images/ecommerce/one/home.png";
 import { Link } from "react-router-dom";
-import { imageTextHover } from "../utils/ColorChange";
+import { bgColor, imageTextHover, textColorHover } from "../utils/ColorChange";
 // import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
 
 const PortfolioPage = () => {
+  const [openTab, setOpenTab] = React.useState(1);
   // const openPortfolio = () => {
   //   const portfolioList = document.getElementById("portfolioList");
   //   const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
@@ -33,225 +34,382 @@ const PortfolioPage = () => {
     <>
       <Header />
       <Sidebar />
-      {/* <nav style={{ paddingTop: "10vh" }}>
-        <div
-          style={{ zIndex: "10" }}
-          className="flex shadow-xl lg:hidden fixed w-full left-0 justify-end items-center bg-grey"
-        >
-          <IoChevronDownSharp
-            id="arrowDownPortfolio"
-            onClick={openPortfolio}
-            className="w-6 h-6 my-3 cursor-pointer mr-4 text-white"
-          />
-          <IoChevronUpSharp
-            id="arrowUpPortfolio"
-            onClick={closePortfolio}
-            className="hidden w-6 h-6 my-3 cursor-pointer mr-4 text-white"
-          />
-        </div>
-        <ul
-          style={{ zIndex: "10" }}
-          id="portfolioList"
-          className="hidden shadow-xl lg:flex flex-col lg:flex-row bg-grey fixed flex-row justify-evenly  items-center text-white text-lg w-full text-center pb-10 lg:pb-0 mt-12 lg:mt-0 flex-wrap"
-        >
-          <li
-            onClick={closePortfolio}
-            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
-          >
-            Personal Websites
-          </li>
-          <li
-            onClick={closePortfolio}
-            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
-          >
-            Education Websites
-          </li>
-          <li
-            onClick={closePortfolio}
-            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
-          >
-            Ecommerce Websites
-          </li>
-          <li
-            onClick={closePortfolio}
-            className="cursor-pointer hover:bg-darkGrey py-2 px-2 w-full sm:w-48 "
-          >
-            Web Applications
-          </li>
-        </ul>
-      </nav> */}
+
       <main className="pt-24 px-8 sm:pl-18 lg:pl-24">
-        <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-56 lg:w-4/12">
-            Personal Websites
-          </h1>
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+        <div className="flex flex-wrap">
+          <div className="w-full">
+            <ul
+              className="flex flex-col mb-0 list-none flex-wrap pt-3 pb-4 sm:flex-row"
+              role="tablist"
             >
-              <Link to="personal-websites-1" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioOne}
-                    alt="Portfolio"
-                  />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  AS (New Version)
-                </p>
-              </Link>
-            </div>
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <a
+                  className={
+                    "text-xs md:text-base font-bold uppercase px-5 py-3 shadow-md rounded block leading-normal " +
+                    (openTab === 1
+                      ? `text-white ${bgColor}`
+                      : `${textColorHover} text-darkGrey bg-white`)
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(1);
+                  }}
+                  data-toggle="tab"
+                  href="#link1"
+                  role="tablist"
+                >
+                  <i className="fas fa-space-shuttle text-base mr-1"></i> All
+                </a>
+              </li>
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <a
+                  className={
+                    "text-xs md:text-base font-bold uppercase px-5 py-3 shadow-md rounded block leading-normal " +
+                    (openTab === 2
+                      ? `text-white ${bgColor}`
+                      : `${textColorHover} text-darkGrey bg-white`)
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(2);
+                  }}
+                  data-toggle="tab"
+                  href="#link2"
+                  role="tablist"
+                >
+                  <i className="fas fa-cog text-base mr-1"></i> Ecommerce
+                </a>
+              </li>
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <a
+                  className={
+                    "text-xs md:text-base font-bold uppercase px-5 py-3 shadow-md rounded block leading-normal " +
+                    (openTab === 3
+                      ? `text-white ${bgColor}`
+                      : `${textColorHover} text-darkGrey bg-white`)
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(3);
+                  }}
+                  data-toggle="tab"
+                  href="#link3"
+                  role="tablist"
+                >
+                  <i className="fas fa-briefcase text-base mr-1"></i> Portfolio
+                </a>
+              </li>
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <a
+                  className={
+                    "text-xs md:text-base font-bold uppercase px-5 py-3 shadow-md rounded block leading-normal " +
+                    (openTab === 4
+                      ? `text-white ${bgColor}`
+                      : `${textColorHover} text-darkGrey bg-white`)
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(4);
+                  }}
+                  data-toggle="tab"
+                  href="#link4"
+                  role="tablist"
+                >
+                  <i className="fas fa-space-shuttle text-base mr-1"></i>{" "}
+                  Education
+                </a>
+              </li>
+            </ul>
+            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6  rounded">
+              <div className="px-4 py-5 flex-auto">
+                <div className="tab-content tab-space">
+                  <div
+                    className={
+                      openTab === 1
+                        ? "flex  lg:p-10 sm:flex-row flex-col flex-wrap cursor-pointer w-full justify-start items-start"
+                        : "hidden"
+                    }
+                    id="link1"
+                  >
+                    {/* All Websites */}
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-1"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioOne}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          AS (New Version)
+                        </p>
+                      </Link>
+                    </div>
 
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="personal-websites-2" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioTwo}
-                    alt="Portfolio"
-                  />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  AS (Old Version)
-                </p>
-              </Link>
-            </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-2"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioTwo}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          AS (Old Version)
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="ecommerce-websites-1"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={ecommerceOne}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          Clothes
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-3"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioThree}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          DarkBio
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-4"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioFour}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          Pretty
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="education-websites-1"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={educationOne}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          Knowledge
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      openTab === 2
+                        ? "flex  lg:p-10 sm:flex-row flex-col flex-wrap cursor-pointer w-full justify-start items-start"
+                        : "hidden"
+                    }
+                    id="link2"
+                  >
+                    {/* Ecommerce Websites */}
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="ecommerce-websites-1"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={ecommerceOne}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          Clothes
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      openTab === 3
+                        ? "flex  lg:p-10 sm:flex-row flex-col flex-wrap cursor-pointer w-full justify-start items-start"
+                        : "hidden"
+                    }
+                    id="link3"
+                  >
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      {/* Portfolio Websites */}
+                      <Link
+                        to="personal-websites-1"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioOne}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          AS (New Version)
+                        </p>
+                      </Link>
+                    </div>
 
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="personal-websites-3" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioThree}
-                    alt="Portfolio"
-                  />
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-2"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioTwo}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          AS (Old Version)
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-3"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioThree}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          DarkBio
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="personal-websites-4"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={portfolioFour}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          Pretty
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      openTab === 4
+                        ? "flex  lg:p-10 sm:flex-row flex-col flex-wrap cursor-pointer w-full justify-start items-start"
+                        : "hidden"
+                    }
+                    id="link4"
+                  >
+                    {/* Education Websites */}
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                    >
+                      <Link
+                        to="education-websites-1"
+                        className={`${imageTextHover}`}
+                      >
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={educationOne}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          Knowledge
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  DarkBio
-                </p>
-              </Link>
-            </div>
-
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="personal-websites-4" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioFour}
-                    alt="Portfolio"
-                  />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  Pretty
-                </p>
-              </Link>
+              </div>
             </div>
           </div>
         </div>
-
-        <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-56 lg:w-4/12">
-            Education Websites
-          </h1>
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="education-websites-1" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={educationOne}
-                    alt="Portfolio"
-                  />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  Knowledge
-                </p>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-48 w-56 lg:w-4/12">
-            Ecommerce Websites
-          </h1>
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="ecommerce-websites-1" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={ecommerceOne}
-                    alt="Portfolio"
-                  />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  Clothes
-                </p>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* <div>
-          <h1 className="text-xl sm:text-2xl lg:text-4xl text-darkGrey pb-1 my-6 mb-10 border-b-2 border-darkGrey w-56 lg:w-4/12">
-            Web Applications
-          </h1>
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full flex-wrap">
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="web-applications-1" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioOne}
-                    alt="Portfolio"
-                    />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  Calculator
-                </p>
-              </Link>
-            </div>
-
-            <div
-              style={{ zIndex: "1" }}
-              className="flex mb-20 lg:mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
-            >
-              <Link to="web-applications-2" className={`${imageTextHover}`}>
-                <div className=" w-full">
-                  <img
-                    className="object-contain rounded-lg imageDark w-96"
-                    src={portfolioOne}
-                    alt="Portfolio"
-                    />
-                </div>
-                <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
-                  Color Generator
-                </p>
-              </Link>
-            </div>
-          </div>
-        </div> */}
       </main>
       <Footer />
     </>

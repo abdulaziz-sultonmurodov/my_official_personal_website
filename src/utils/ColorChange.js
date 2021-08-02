@@ -69,6 +69,23 @@ export const textColor =
     ? "seventh-text"
     : "primary-text";
 
+export const bgColor =
+  days === 0
+    ? "primary-bg"
+    : days === 1
+    ? "secondary-bg"
+    : days === 2
+    ? "third-bg"
+    : days === 3
+    ? "fourth-bg"
+    : days === 4
+    ? "fifth-bg"
+    : days === 5
+    ? "sixth-bg"
+    : days === 6
+    ? "seventh-bg"
+    : "primary-bg";
+
 export const navColor =
   days === 0
     ? "#ff6700"

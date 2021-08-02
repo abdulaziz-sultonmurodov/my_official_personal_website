@@ -160,3 +160,25 @@ body {
 .seventh-text {
   color: #20a4f3;
 }
+
+.primary-bg {
+  background-color: #ff6700;
+}
+.secondary-bg {
+  background-color: #ed217c;
+}
+.third-bg {
+  background-color: #09bc8a;
+}
+.fourth-bg {
+  background-color: #054a91;
+}
+.fifth-bg {
+  background-color: #a1674a;
+}
+.sixth-bg {
+  background-color: #ff6978;
+}
+.seventh-bg {
+  background-color: #20a4f3;
+}
