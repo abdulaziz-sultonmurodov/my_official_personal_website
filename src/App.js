@@ -16,6 +16,8 @@ import EducationOne from "./pages/projects/education/EducationOne";
 import EcommerceOne from "./pages/projects/ecommerce/EcommerceOne";
 import WebApplicationOne from "./pages/projects/webapplications/WebApplicationOne";
 import WebApplicationTwo from "./pages/projects/webapplications/WebApplicationTwo";
+import AqsoShop from "./pages/projects/ecommerce/AqsoShop";
+import N14 from "./pages/projects/education/N14";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/personal-websites-4" component={PersonalFour} />
         <Route path="/education-websites-1" component={EducationOne} />
         <Route path="/ecommerce-websites-1" component={EcommerceOne} />
+        <Route path="/aqsoshop" component={AqsoShop} />
+        <Route path="/n14" component={N14} />
         <Route path="/webapplication-1" component={WebApplicationOne} />
         <Route path="/webapplication-2" component={WebApplicationTwo} />
       </ScrollToTop>

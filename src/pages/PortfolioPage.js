@@ -10,26 +10,12 @@ import educationOne from "../images/education/one/home.png";
 import ecommerceOne from "../images/ecommerce/one/home.png";
 import { Link } from "react-router-dom";
 import { bgColor, imageTextHover, textColorHover } from "../utils/ColorChange";
-// import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
+import AQSOShop from "../images/ecommerce/AQSO-shop/homeImg.png";
+import N14 from "../images/education/N14/homeImg.png";
 
 const PortfolioPage = () => {
   const [openTab, setOpenTab] = React.useState(1);
-  // const openPortfolio = () => {
-  //   const portfolioList = document.getElementById("portfolioList");
-  //   const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
-  //   const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
-  //   portfolioList.style.display = "flex";
-  //   arrowDownPortfolio.style.display = "none";
-  //   arrowUpPortfolio.style.display = "flex";
-  // };
-  // const closePortfolio = () => {
-  //   const arrowDownPortfolio = document.getElementById("arrowDownPortfolio");
-  //   const portfolioList = document.getElementById("portfolioList");
-  //   const arrowUpPortfolio = document.getElementById("arrowUpPortfolio");
-  //   portfolioList.style.display = "none";
-  //   arrowDownPortfolio.style.display = "flex";
-  //   arrowUpPortfolio.style.display = "none";
-  // };
+
   return (
     <>
       <Header />
@@ -134,7 +120,42 @@ const PortfolioPage = () => {
                     {/* All Websites */}
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
+                    >
+                      <Link to="/aqsoshop" className={`${imageTextHover}`}>
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={AQSOShop}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          AQSO Shop
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
+                    >
+                      <Link to="/n14" className={`${imageTextHover}`}>
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={N14}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          N14
+                        </p>
+                      </Link>
+                    </div>
+
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-1"
@@ -155,7 +176,7 @@ const PortfolioPage = () => {
 
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-2"
@@ -173,9 +194,10 @@ const PortfolioPage = () => {
                         </p>
                       </Link>
                     </div>
+
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="ecommerce-websites-1"
@@ -195,7 +217,7 @@ const PortfolioPage = () => {
                     </div>
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-3"
@@ -215,7 +237,7 @@ const PortfolioPage = () => {
                     </div>
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-4"
@@ -235,7 +257,7 @@ const PortfolioPage = () => {
                     </div>
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="education-websites-1"
@@ -265,7 +287,24 @@ const PortfolioPage = () => {
                     {/* Ecommerce Websites */}
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
+                    >
+                      <Link to="/aqsoshop" className={`${imageTextHover}`}>
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={AQSOShop}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          AQSO Shop
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="ecommerce-websites-1"
@@ -294,7 +333,7 @@ const PortfolioPage = () => {
                   >
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       {/* Portfolio Websites */}
                       <Link
@@ -316,7 +355,7 @@ const PortfolioPage = () => {
 
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-2"
@@ -336,7 +375,7 @@ const PortfolioPage = () => {
                     </div>
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-3"
@@ -356,7 +395,7 @@ const PortfolioPage = () => {
                     </div>
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="personal-websites-4"
@@ -386,7 +425,24 @@ const PortfolioPage = () => {
                     {/* Education Websites */}
                     <div
                       style={{ zIndex: "1" }}
-                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2"
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
+                    >
+                      <Link to="/n14" className={`${imageTextHover}`}>
+                        <div className=" w-full">
+                          <img
+                            className="object-contain rounded-lg imageDark w-96"
+                            src={N14}
+                            alt="Portfolio"
+                          />
+                        </div>
+                        <p className="workTitle text-grey text-md sm:text-lg lg:text-xl mt-2  text-center">
+                          N14
+                        </p>
+                      </Link>
+                    </div>
+                    <div
+                      style={{ zIndex: "1" }}
+                      className="flex mb-10 flex-col cursor-pointer justify-center items-center w-full lg:w-1/2 md:h-64"
                     >
                       <Link
                         to="education-websites-1"
