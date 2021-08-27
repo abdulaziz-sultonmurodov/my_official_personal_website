@@ -7,8 +7,16 @@ import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { IoLogoFacebook, IoLogoGithub, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { HiMail } from "react-icons/hi";
 import {bgColorHover, borderColorHover, navColor,  textColorHover} from "../utils/ColorChange";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const language = localStorage.getItem("i18nextLng");
+
+  const languageChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
+
   const openNav = () => {
     const burger = document.getElementById("burger");
     const burgerList = document.getElementById("burgerList");
@@ -41,7 +49,7 @@ const Header = () => {
             <ul  className="hidden lg:flex flex-row justify-between items-center">
               <NavLink exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
-                  Home
+                  {t("navbarHome")}
                 </li>
               </NavLink>
               <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/about">
@@ -104,6 +112,68 @@ const Header = () => {
           className="hidden  transition ease-out duration-500"
         >
           <ul style={{ zIndex: "10" }} className=" px-2 border-b shadow-xl border-gray-300 top-10 bg-white h-full fixed w-full flex flex-col justify-between pt-2 pb-10 mt-4 m-auto text-center space-y-1 sm:px-3">
+          <h3 className="text-lg leading-6 font-medium text-green-500" id="modal-title">
+            
+            {language === "uz"
+              ? t("languageModalUz")
+              : language === "ru"
+              ? t("languageModalRu")
+              : language === "uzr"
+              ? t("languageModalUzr")
+              : t("languageModalUzrDefault")}
+            </h3>
+            <div
+              onClick={languageChange}
+             
+              className=
+               "flex flex-col mt-4"
+                
+              
+            >
+              <input
+                id="uz"
+                className="hidden"
+                type="radio"
+                name="language"
+                value="uz"
+              />{" "}
+              <label
+          
+                htmlFor="uz"
+                className={language === "uz" ? "cursor-pointer bg-primary text-white px-8 py-2 my-1" : "cursor-pointer hover:bg-primary hover:text-white px-8 py-2 my-1"}
+              >
+                {t("languageUz")}
+              </label>
+              <input
+                id="uzr"
+                className="hidden"
+                type="radio"
+                name="language"
+                value="uzr"
+              
+              />{" "}
+              <label
+         
+                htmlFor="uzr"
+                className={language === "uzr" || !language ? "cursor-pointer bg-primary text-white px-8 py-2 my-1" : "cursor-pointer hover:bg-primary hover:text-white px-8 py-2 my-1"}
+              >
+                {t("languageUzR")}
+              </label>
+               <input
+                id="ru"
+                className="hidden"
+                type="radio"
+                name="language"
+                value="ru"
+              />{" "}
+              <label
+              
+                htmlFor="ru"
+                className={language === "ru" ? "cursor-pointer bg-primary text-white px-8 py-2 my-1" : "cursor-pointer hover:bg-primary hover:text-white px-8 py-2 my-1"}
+              >
+                {t("languageRu")}
+              </label>
+            </div>
             <div>
               <li className="my-2">
             <NavLink className={`text-grey ${textColorHover}  rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} exact activeStyle={{color: `${navColor}`}} to="/">
