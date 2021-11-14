@@ -72,6 +72,11 @@ const Header = () => {
                   Blog
                 </li>
               </NavLink> */}
+              <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/avatar">
+                <li className={`cursor-pointer font-semibold text-grey ${textColorHover}`}>
+                  Extra
+                </li>
+              </NavLink>
               <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover}`}>
                   Contact
@@ -200,6 +205,11 @@ const Header = () => {
                 Blog
               </li>
             </NavLink> */}
+               <li className="my-2">
+            <NavLink className={`text-grey ${textColorHover} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/avatar">
+                Extra
+            </NavLink>
+              </li>
               <li className="my-2">
             <NavLink className={`text-grey ${textColorHover} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/contact">
                 Contact

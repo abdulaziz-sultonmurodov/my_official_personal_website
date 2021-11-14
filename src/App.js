@@ -18,6 +18,7 @@ import WebApplicationOne from "./pages/projects/webapplications/WebApplicationOn
 import WebApplicationTwo from "./pages/projects/webapplications/WebApplicationTwo";
 import AqsoShop from "./pages/projects/ecommerce/AqsoShop";
 import N14 from "./pages/projects/education/N14";
+import MyModel from "./pages/extra/MyModel";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/n14" component={N14} />
         <Route path="/webapplication-1" component={WebApplicationOne} />
         <Route path="/webapplication-2" component={WebApplicationTwo} />
+        <Route path="/avatar" component={MyModel} />
       </ScrollToTop>
     </Router>
   );
