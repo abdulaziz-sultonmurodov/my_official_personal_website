@@ -11,7 +11,7 @@ const MyModel = () => {
         <Link to="/">Go Back</Link>
       </div>
       <Canvas
-        style={{ height: "180vh" }}
+        style={{ height: "160vh" }}
         camera={{
           fov: 25,
           zoom: 1.3,
