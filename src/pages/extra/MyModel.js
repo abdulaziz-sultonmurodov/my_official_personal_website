@@ -27,6 +27,7 @@ const MyModel = () => {
           <directionalLight position={[10, -10, 0]} intensity={1} />
           <directionalLight position={[-10, 10, -60]} intensity={1} />
           <directionalLight position={[-20, -50, 0]} intensity={1} />
+          <directionalLight position={[40, 50, 20]} intensity={1} />
           {/* <Environment preset="sunset" background /> */}
         </Suspense>
       </Canvas>
