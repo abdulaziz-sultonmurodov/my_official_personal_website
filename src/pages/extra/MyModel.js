@@ -22,8 +22,10 @@ const MyModel = () => {
         <Suspense fallback={<Html>loading..</Html>}>
           <Model />
           <OrbitControls makeDefault />
-          <directionalLight position={[10, 10, 5]} intensity={2} />
-          <directionalLight position={[-10, -10, -5]} intensity={1} />
+          <directionalLight position={[-20, 30, 20]} intensity={2} />
+          <directionalLight position={[10, -10, -10]} intensity={1} />
+          <directionalLight position={[10, -10, 10]} intensity={1} />
+          <directionalLight position={[0, 0, -60]} intensity={1} />
           {/* <Environment preset="sunset" background /> */}
         </Suspense>
       </Canvas>
