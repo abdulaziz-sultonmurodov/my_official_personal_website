@@ -9,12 +9,6 @@ import { AiOutlineZoomIn, AiOutlineHome } from "react-icons/ai";
 const MyModel = () => {
   return (
     <>
-      <div className="pt-4 pl-10 fixed">
-        <Link className="flex items-center" to="/">
-          <AiOutlineHome className="mr-2" />
-          Go Back
-        </Link>
-      </div>
       <Canvas
         style={{ height: "160vh" }}
         camera={{
@@ -36,7 +30,13 @@ const MyModel = () => {
           {/* <Environment preset="sunset" background /> */}
         </Suspense>
       </Canvas>
-      <div className="fixed bottom-5 right-6">
+      <div className="top-5 left-6 fixed bg-gray-200 opacity-40 px-4 py-1 rounded-lg">
+        <Link className="flex items-center" to="/">
+          <AiOutlineHome className="mr-2" />
+          Go Back
+        </Link>
+      </div>
+      <div className="fixed bottom-5 right-6 bg-gray-200 opacity-40 px-4 py-1 rounded-lg">
         <p className="flex items-center">
           <AiOutlineZoomIn className="mr-2" />
           Hold two fingers to zoom in/out

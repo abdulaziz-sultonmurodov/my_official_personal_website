@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from "../images/logo.png"
@@ -33,6 +33,28 @@ const Header = () => {
     cancel.style.display = "none";
     burger.style.display = "flex";
   };
+
+  const [toggleGames, setToggleGames] = useState(false)
+  const [toggleGamesMobile, setToggleGamesMobile] = useState(false)
+  const [toggleUtils, setToggleUtils] = useState(false)
+  const [toggleUtilsMobile, setToggleUtilsMobile] = useState(false)
+
+  const handleToggleGames = () => {
+    setToggleGames(!toggleGames)
+    setToggleUtils(false)
+  }
+  const handleToggleGamesMobile = () => {
+    setToggleGamesMobile(!toggleGamesMobile)
+    setToggleUtilsMobile(false)
+  }
+  const handleToggleUtils = () => {
+    setToggleUtils(!toggleUtils)
+    setToggleGames(false)
+  }
+  const handleToggleUtilsMobile = () => {
+    setToggleUtilsMobile(!toggleUtilsMobile)
+    setToggleGamesMobile(false)
+  }
   return (
     
     <>
@@ -45,7 +67,7 @@ const Header = () => {
               </div>
             </NavLink>
           </div>
-          <div  className="w-2/5">
+          <div  className="w-7/12">
             <ul  className="hidden lg:flex flex-row justify-between items-center">
               <NavLink exact activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover} tracking-wider`}>
@@ -74,9 +96,44 @@ const Header = () => {
               </NavLink> */}
               <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/avatar">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover}`}>
-                  Extra
+                  Me
                 </li>
               </NavLink>
+             
+<div className="relative inline-block text-left">
+  <div>
+    <div onClick={handleToggleGames} type="button" className={`inline-flex justify-center focus:outline-none cursor-pointer font-semibold text-grey ${textColorHover}`} id="menu-button" aria-expanded="true" aria-haspopup="true">
+      Games
+      <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+  {toggleGames ?  <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div className="py-1" role="none">
+      <Link to="/avatar" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Snake game</Link>
+      <Link to="/" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Tetris</Link>
+      <Link to="/" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Tic Tac Toe</Link>
+    </div>
+  </div> : null}
+</div>
+<div className="relative inline-block text-left">
+  <div>
+    <div onClick={handleToggleUtils} type="button" className={`inline-flex justify-center focus:outline-none cursor-pointer font-semibold text-grey ${textColorHover}`} id="menu-button" aria-expanded="true" aria-haspopup="true">
+      Utilities
+      <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+  {toggleUtils ?  <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div className="py-1" role="none">
+      <Link to="/avatar" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Snake game</Link>
+      <Link to="/" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Tetris</Link>
+      <Link to="/" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Tic Tac Toe</Link>
+    </div>
+  </div> : null}
+</div>
               <NavLink activeStyle={{borderBottom: `2px solid ${navColor}`}} to="/contact">
                 <li className={`cursor-pointer font-semibold text-grey ${textColorHover}`}>
                   Contact
@@ -207,8 +264,30 @@ const Header = () => {
             </NavLink> */}
                <li className="my-2">
             <NavLink className={`text-grey ${textColorHover} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/avatar">
-                Extra
+                Me
             </NavLink>
+              </li>
+              <li className="my-2">
+            <span onClick={handleToggleGamesMobile} className={`text-grey ${textColorHover} cursor-pointer rounded-md text-base font-semibold tracking-wider`}>
+                Games
+            </span>
+            {toggleGamesMobile ?     <ul>
+              <li className="my-2">Snake Game</li>
+              <li className="my-2">Tetris</li>
+              <li className="my-2">Tic Tac Toe</li>
+            </ul> : null}
+        
+              </li>
+              <li className="my-2">
+            <span onClick={handleToggleUtilsMobile} className={`text-grey ${textColorHover} cursor-pointer rounded-md text-base font-semibold tracking-wider`}>
+                Utilities
+            </span>
+            {toggleUtilsMobile ?     <ul>
+              <li className="my-2">Snake Game</li>
+              <li className="my-2">Tetris</li>
+              <li className="my-2">Tic Tac Toe</li>
+            </ul> : null}
+        
               </li>
               <li className="my-2">
             <NavLink className={`text-grey ${textColorHover} rounded-md text-base font-semibold tracking-wider`} onClick={closeNav} activeStyle={{color: `${navColor}`}} to="/contact">
