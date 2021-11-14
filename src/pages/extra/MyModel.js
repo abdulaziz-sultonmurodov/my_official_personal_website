@@ -3,12 +3,17 @@ import Model from "../../components/avatar";
 import { Canvas } from "@react-three/fiber";
 import { Html, OrbitControls } from "@react-three/drei";
 import { Link } from "react-router-dom";
+import { FaRegHandPeace, FaRegHandPointer } from "react-icons/fa";
+import { AiOutlineZoomIn, AiOutlineHome } from "react-icons/ai";
 
 const MyModel = () => {
   return (
     <>
-      <div className="pt-4 pl-10">
-        <Link to="/">Go Back</Link>
+      <div className="pt-4 pl-10 fixed">
+        <Link className="flex items-center" to="/">
+          <AiOutlineHome className="mr-2" />
+          Go Back
+        </Link>
       </div>
       <Canvas
         style={{ height: "160vh" }}
@@ -31,6 +36,20 @@ const MyModel = () => {
           {/* <Environment preset="sunset" background /> */}
         </Suspense>
       </Canvas>
+      <div className="fixed bottom-5 right-6">
+        <p className="flex items-center">
+          <AiOutlineZoomIn className="mr-2" />
+          Hold two fingers to zoom in/out
+        </p>
+        <p className="flex items-center">
+          <FaRegHandPointer className="mr-2" />
+          Hold one fingers to move around
+        </p>
+        <p className="flex items-center">
+          <FaRegHandPeace className="mr-2" />
+          Slide two fingers to move
+        </p>
+      </div>
     </>
   );
 };
