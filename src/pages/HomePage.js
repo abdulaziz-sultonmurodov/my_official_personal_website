@@ -16,7 +16,7 @@ const HomePage = () => {
       <Header />
       <Sidebar />
 
-      <div className="w-96 h-96 sm:hidden pt-24 mb-4 flex flex-row items-center justify-center">
+      <div className="w-full h-96 sm:hidden pt-24 mb-4 flex flex-row items-center justify-center">
         <img
           className="w-full h-full"
           src={HomePageCover}
@@ -77,7 +77,7 @@ const HomePage = () => {
           </Link>
         </div>
       </main>
-      <div className="w-96 h-96 hidden -mt-32 sm:flex sm:flex-row items-center justify-center">
+      <div className="w-full h-96 hidden -mt-32 sm:flex sm:flex-row items-center justify-center">
         <img
           className="w-full h-full"
           src={HomePageCover}
