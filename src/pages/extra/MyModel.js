@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import Model from "../../components/avatar";
 import { Canvas } from "@react-three/fiber";
-import { Environment, Html, OrbitControls } from "@react-three/drei";
+import { Html, OrbitControls } from "@react-three/drei";
 import { Link } from "react-router-dom";
 
 const MyModel = () => {
